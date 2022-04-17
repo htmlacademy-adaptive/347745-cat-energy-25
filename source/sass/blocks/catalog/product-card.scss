@@ -40,3 +40,19 @@
 .product-card__meaning {
   text-align: end;
 }
+.product-card__text {
+  color: #444444;
+}
+.product--extra {
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+}
+.product-extra--title {
+  max-width: 100%;
+
+}
+.product-card__text {
+  margin-bottom: 20px;
+}
