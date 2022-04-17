@@ -1,0 +1,36 @@
+.program__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+.program__item {
+
+  padding: 20px;
+}
+
+.program__title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+}
+.program__text {
+  margin: 25px 0;
+}
+.program__link {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}

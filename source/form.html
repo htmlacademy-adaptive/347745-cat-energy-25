@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Форма</title>
@@ -30,7 +31,7 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper visually-hidden">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link"> Главная </a>
@@ -46,7 +47,7 @@
       </nav>
     </header>
     <main class="main-container">
-      <h1 class="page__title">Подбор программы</h1>
+      <h1 class="page-title">Подбор программы</h1>
       <section class="selection">
         <p class="selection__text">
           Заполните анкету, и мы подберем программу питания для вашего кота
@@ -68,10 +69,10 @@
             Возраст (лет):
             <input class="selection__input" type="text" placeholder="7" />
           </label>
-          <fieldset class="selection-program">
-            <ul class="selection-program__list">
-              <li class="selection-program__item">
-                <label class="selection-program__meaning">
+          <fieldset class="program">
+            <ul class="program__list">
+              <li class="program__item">
+                <label class="program__meaning">
                   <input
                     class="visually-hidden"
                     type="radio"
@@ -81,8 +82,8 @@
                   похудение
                 </label>
               </li>
-              <li class="selection-program__item">
-                <label class="selection-program__meaning">
+              <li class="program__item">
+                <label class="program__meaning">
                   <input
                     class="visually-hidden"
                     type="radio"
@@ -91,8 +92,8 @@
                   Набор массы
                 </label>
               </li>
-              <li class="selection-program__item">
-                <label class="selection-program__meaning">
+              <li class="program__item">
+                <label class="program__meaning">
                   <input class="visually-hidden" type="radio" name="help" />
                   Не знаю (Нужен ваш совет)
                 </label>
@@ -155,16 +156,16 @@
               </li>
             </ul>
           </fieldset>
-          <button class="selection__button" type="submit">
+          <button class="selection__button site-button" type="submit">
             отправить заявку
           </button>
         </form>
         <span class="necessarily">* — Обязательные поля</span>
       </section>
-      <section class="contact">
+      <section class="our-contact">
         <h2 class="visually-hidden">Наш адрес</h2>
-        <p class="contact__text">приглашаем к сотрудничеству дилеров!</p>
-        <address class="contact__adress">
+        <p class="our-contact__text">приглашаем к сотрудничеству дилеров!</p>
+        <address class="our-contact__adress">
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </address>
       </section>

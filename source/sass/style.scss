@@ -1,1 +1,51 @@
-// Начните писать стили здесь
+// index //
+
+@import "./blocks/index/page-body.scss";
+@import "./blocks/index/program-selection.scss";
+@import "./blocks/index/page-title.scss";
+@import "./blocks/index/main-container.scss";
+@import "./blocks/index/map.scss";
+@import "./blocks/index/our-contact.scss";
+@import "./blocks/index/program.scss";
+@import "./blocks/index/advantage.scss";
+@import "./blocks/index/example.scss";
+
+// header //
+
+
+@import "./blocks/header/main-nav.scss";
+@import "./blocks/header/main-header.scss";
+
+// form //
+
+@import "./blocks/form/caption.scss";
+@import "./blocks/form/comments.scss";
+@import "./blocks/form/contacts.scss";
+@import "./blocks/form/extra.scss";
+@import "./blocks/form/our-contact.scss";
+@import "./blocks/form/program.scss";
+@import "./blocks/form/selection.scss";
+
+// footer //
+
+@import "./blocks/footer/main-footer.scss";
+
+// catalog //
+
+@import "./blocks/catalog/additional.scss";
+@import "./blocks/catalog/gift.scss";
+@import "./blocks/catalog/product-card.scss";
+@import "./blocks/catalog/product.scss";
+
+// button //
+
+@import "./blocks/button/site-button.scss";
+
+// visually-hidden //
+
+@import "./blocks/visually-hidden.scss";
+
+
+@import "./blocks/container.scss";
+@import "./blocks/back__color.scss";
+

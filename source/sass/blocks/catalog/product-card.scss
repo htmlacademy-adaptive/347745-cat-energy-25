@@ -1,0 +1,42 @@
+.product-card__link {
+  display: flex;
+  text-decoration: none;
+}
+.product-card__title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #222222;
+  max-width: 76px;
+  margin: 15px 0;
+}
+.product-card__img-wrapper {
+  min-width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-card__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.product-card__items {
+  min-width: 142px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+.product-card__criterion {
+  text-align: start;
+}
+.product-card__meaning {
+  text-align: end;
+}
