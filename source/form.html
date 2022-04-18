@@ -135,8 +135,8 @@
               placeholder="Расскажите обо всех повАдках кота"
             />
           </fieldset>
-          <fieldset class="extra">
-            <legend class="caption">Дополнительно</legend>
+          <fieldset class="extra container">
+            <legend class="extra__title caption">Дополнительно</legend>
             <ul class="extra__list">
               <li class="extra__item">
                 <label class="extra__meaning">
@@ -164,22 +164,26 @@
               </li>
             </ul>
           </fieldset>
-          <button class="selection__button site-button" type="submit">
+          <button class="selection__button site-button container" type="submit">
             отправить заявку
           </button>
         </form>
-        <span class="necessarily">* — Обязательные поля</span>
+        <div class="selection__necessarily-wrapper container">
+        <span class="selection__necessarily">* — Обязательные поля</span>
+      </div>
       </section>
-      <section class="our-contact">
-        <h2 class="visually-hidden">Наш адрес</h2>
-        <p class="our-contact__text">приглашаем к сотрудничеству дилеров!</p>
-        <address class="our-contact__adress">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </address>
+      <section class="our-contact back__color">
+        <div class="our-contact__wrapper container">
+          <h2 class="visually-hidden">Наш адрес</h2>
+          <p class="our-contact__text">приглашаем к сотрудничеству дилеров!</p>
+          <address class="our-contact__adress">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </address>
+        </div>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Наш магазин на карте</h2>
-        <img
+        <img class="map__image"
           src="img/index/map/location.jpg"
           alt="карта города с указанием локации"
           width="320"

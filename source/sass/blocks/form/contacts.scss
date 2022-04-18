@@ -7,13 +7,13 @@
   text-transform: uppercase;
   color: #444444;
 }
-
 .contacts {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 10px 0;
   box-sizing: border-box;
+  border: none;
 }
 .contacts__title {
   margin-bottom: 35px;
@@ -21,7 +21,6 @@
 }
 .contacts__meaning {
   @include fonts();
-
 }
 .contacts__input {
   @include fonts();
@@ -30,8 +29,8 @@
   margin-bottom: 14px;
 }
 .contacts__input--email {
-width: 65.8%;
+  width: 65.8%;
 }
 .contacts__input--tel {
-width: 59.7%;
+  width: 59.7%;
 }

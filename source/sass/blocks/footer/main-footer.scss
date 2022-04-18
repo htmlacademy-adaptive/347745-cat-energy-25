@@ -17,6 +17,9 @@
   display: flex;
   justify-content: center;
 }
+.main-footer__item:not(:last-child) {
+  margin-right: 25px;
+}
 .main-footer__wrapper {
   display: flex;
   justify-content: space-between;
