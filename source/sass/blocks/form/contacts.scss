@@ -1,5 +1,5 @@
 @mixin fonts {
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -7,6 +7,7 @@
   text-transform: uppercase;
   color: #444444;
 }
+
 .contacts {
   display: flex;
   flex-direction: column;
@@ -15,22 +16,27 @@
   box-sizing: border-box;
   border: none;
 }
+
 .contacts__title {
   margin-bottom: 35px;
   margin-top: 16px;
 }
+
 .contacts__meaning {
   @include fonts();
 }
+
 .contacts__input {
   @include fonts();
   border: 1px solid #cdcdcd;
   margin-left: 8px;
   margin-bottom: 14px;
 }
+
 .contacts__input--email {
   width: 65.8%;
 }
+
 .contacts__input--tel {
   width: 59.7%;
 }

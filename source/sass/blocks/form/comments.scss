@@ -5,18 +5,20 @@
   padding-bottom: 22px;
   border: none;
 }
+
 .comments__title {
   margin-bottom: 35px;
 }
+
 .comments__input {
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
   width: 100%;
   min-height: 150px;
   padding: 10px 12px;

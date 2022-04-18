@@ -4,14 +4,12 @@
   list-style-type: none;
 }
 
-
 .program__item {
-
   padding: 20px;
 }
 
 .program__title {
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -20,11 +18,13 @@
   color: #000000;
   margin: 0;
 }
+
 .program__text {
   margin: 25px 0;
 }
+
 .program__link {
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
