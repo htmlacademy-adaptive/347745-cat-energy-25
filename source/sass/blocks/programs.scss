@@ -1,14 +1,15 @@
-.program__list {
+.programs__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.program__item {
+.programs__item {
   padding: 20px;
+  margin-bottom: 25px;
 }
 
-.program__title {
+.programs__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -19,11 +20,11 @@
   margin: 0;
 }
 
-.program__text {
+.programs__text {
   margin: 25px 0;
 }
 
-.program__link {
+.programs__link {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;

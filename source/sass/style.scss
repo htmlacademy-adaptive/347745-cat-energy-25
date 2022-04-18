@@ -1,51 +1,26 @@
-// index //
-
-
-@import "./blocks/index/program-selection.scss";
-@import "./blocks/index/main-container.scss";
-@import "./blocks/index/map.scss";
-@import "./blocks/index/our-contact.scss";
-@import "./blocks/index/program.scss";
-@import "./blocks/index/advantage.scss";
-@import "./blocks/index/example.scss";
-
-// header //
-
-
-@import "./blocks/header/main-nav.scss";
-@import "./blocks/header/main-header.scss";
-
-// form //
-
-@import "./blocks/form/caption.scss";
-@import "./blocks/form/comments.scss";
-@import "./blocks/form/contacts.scss";
-@import "./blocks/form/extra.scss";
-@import "./blocks/form/our-contact.scss";
-@import "./blocks/form/program.scss";
-@import "./blocks/form/selection.scss";
-
-// footer //
-
-@import "./blocks/footer/main-footer.scss";
-
-// catalog //
-
-@import "./blocks/catalog/additional.scss";
-@import "./blocks/catalog/gift.scss";
-@import "./blocks/catalog/product-card.scss";
-@import "./blocks/catalog/product.scss";
-@import "./blocks/catalog/product-extra.scss";
-
-// button //
-
-@import "./blocks/button/site-button.scss";
-
-// visually-hidden //
-
+@import "./blocks/program-selection.scss";
+@import "./blocks/map.scss";
+@import "./blocks/our-contact.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/advantage.scss";
+@import "./blocks/example.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/caption.scss";
+@import "./blocks/comments.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/extra.scss";
+@import "./blocks/our-contact.scss";
+@import "./blocks/program.scss";
+@import "./blocks/selection.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/additional.scss";
+@import "./blocks/gift.scss";
+@import "./blocks/product-card.scss";
+@import "./blocks/product.scss";
+@import "./blocks/site-button.scss";
 @import "./blocks/visually-hidden.scss";
 @import "./blocks/container.scss";
-@import "./blocks/back__color.scss";
+@import "./blocks/back-color.scss";
 @import "./blocks/fonts.scss";
 @import "./blocks/page-title.scss";
 @import "./blocks/page-body.scss";
