@@ -1,0 +1,32 @@
+.extra {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+.extra__title {
+  margin-bottom: 35px;
+  margin-top: 22px;
+}
+
+.extra__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.extra__meaning {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-left: 60px;
+}
+
+.extra__item {
+  margin-bottom: 25px;
+}

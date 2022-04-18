@@ -1,0 +1,27 @@
+.program-selection {
+  background-image: url("../img/index/index-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+
+.program-selection__title {
+  text-align: center;
+  margin-top: 27px;
+}
+
+.program-selection__link {
+  margin: 0 auto;
+  display: block;
+  width: 280px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.program-selection__text {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}

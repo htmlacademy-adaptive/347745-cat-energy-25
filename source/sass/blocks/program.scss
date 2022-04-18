@@ -1,0 +1,30 @@
+.program {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 25px;
+  padding-left: 65px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.program__meaning {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.program__list {
+  margin: 0;
+  padding: 0;
+}
+
+.program__item {
+  margin-top: 25px;
+  padding: 0;
+}

@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Форма</title>
@@ -30,7 +31,7 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper visually-hidden">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link"> Главная </a>
@@ -46,32 +47,40 @@
       </nav>
     </header>
     <main class="main-container">
-      <h1 class="page__title">Подбор программы</h1>
       <section class="selection">
-        <p class="selection__text">
-          Заполните анкету, и мы подберем программу питания для вашего кота
-        </p>
+        <div class="container">
+          <h1 class="selection__title page-title">Подбор программы</h1>
+          <p class="selection__text">
+            Заполните анкету, и мы подберем программу питания для вашего кота
+          </p>
+        </div>
         <form
           class="selection__form"
           action="https://echo.htmlacademy.ru"
           method="get"
         >
-          <label class="selection__meaning">
-            ИМЯ:*
-            <input class="selection__input" type="text" placeholder="барсик" />
-          </label>
-          <label class="selection__meaning">
-            Вес (кг):*
-            <input class="selection__input" type="text" placeholder="7" />
-          </label>
-          <label class="selection__meaning">
-            Возраст (лет):
-            <input class="selection__input" type="text" placeholder="7" />
-          </label>
-          <fieldset class="selection-program">
-            <ul class="selection-program__list">
-              <li class="selection-program__item">
-                <label class="selection-program__meaning">
+          <fieldset class="data container">
+            <label class="selection__meaning">
+              ИМЯ:*
+              <input
+                class="selection__input selection__input--name input"
+                type="text"
+                placeholder="барсик"
+              />
+            </label>
+            <label class="selection__meaning">
+              Вес (кг):*
+              <input class="selection__input selection__input--weight input" type="text" placeholder="7" />
+            </label>
+            <label class="selection__meaning">
+              Возраст (лет):
+              <input class="selection__input selection__input--age input" type="text" placeholder="7" />
+            </label>
+          </fieldset>
+          <fieldset class="program container">
+            <ul class="program__list">
+              <li class="program__item">
+                <label class="program__meaning">
                   <input
                     class="visually-hidden"
                     type="radio"
@@ -81,8 +90,8 @@
                   похудение
                 </label>
               </li>
-              <li class="selection-program__item">
-                <label class="selection-program__meaning">
+              <li class="program__item">
+                <label class="program__meaning">
                   <input
                     class="visually-hidden"
                     type="radio"
@@ -91,20 +100,20 @@
                   Набор массы
                 </label>
               </li>
-              <li class="selection-program__item">
-                <label class="selection-program__meaning">
+              <li class="program__item">
+                <label class="program__meaning">
                   <input class="visually-hidden" type="radio" name="help" />
                   Не знаю (Нужен ваш совет)
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="contacts">
-            <legend class="caption">Контактные данные (владельца кота)</legend>
+          <fieldset class="contacts container">
+            <legend class="contacts__title caption">Контактные данные (владельца кота)</legend>
             <label class="contacts__meaning">
               E-mail:*
               <input
-                class="contacts__input"
+                class="contacts__input contacts__input--email input"
                 type="email"
                 placeholder="kuklachev@gmail.com"
               />
@@ -112,22 +121,22 @@
             <label class="contacts__meaning">
               Телефон:*
               <input
-                class="contacts__input"
+                class="contacts__input contacts__input--tel input"
                 type="tel"
                 placeholder="8 (960) 900-60-90"
               />
             </label>
           </fieldset>
-          <fieldset class="comments">
-            <legend class="caption">Комментарий</legend>
+          <fieldset class="comments container">
+            <legend class="comments__title caption">Комментарий</legend>
             <input
               class="comments__input"
               type="text"
               placeholder="Расскажите обо всех повАдках кота"
             />
           </fieldset>
-          <fieldset class="extra">
-            <legend class="caption">Дополнительно</legend>
+          <fieldset class="extra container">
+            <legend class="extra__title caption">Дополнительно</legend>
             <ul class="extra__list">
               <li class="extra__item">
                 <label class="extra__meaning">
@@ -155,22 +164,26 @@
               </li>
             </ul>
           </fieldset>
-          <button class="selection__button" type="submit">
+          <button class="selection__button site-button container" type="submit">
             отправить заявку
           </button>
         </form>
-        <span class="necessarily">* — Обязательные поля</span>
+        <div class="selection__necessarily-wrapper container">
+        <span class="selection__necessarily">* — Обязательные поля</span>
+      </div>
       </section>
-      <section class="contact">
-        <h2 class="visually-hidden">Наш адрес</h2>
-        <p class="contact__text">приглашаем к сотрудничеству дилеров!</p>
-        <address class="contact__adress">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </address>
+      <section class="our-contact back-color">
+        <div class="our-contact__wrapper container">
+          <h2 class="visually-hidden">Наш адрес</h2>
+          <p class="our-contact__text">приглашаем к сотрудничеству дилеров!</p>
+          <address class="our-contact__adress">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </address>
+        </div>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Наш магазин на карте</h2>
-        <img
+        <img class="map__image"
           src="img/index/map/location.jpg"
           alt="карта города с указанием локации"
           width="320"
@@ -178,8 +191,8 @@
         />
       </section>
     </main>
-    <footer class="main-footer">
-      <div class="main-footer__cotainer">
+    <footer class="main-footer back-color">
+      <div class="main-footer__cotainer container">
         <img
           class="main-footer__image"
           src="img/index/logo/logo2.svg"
