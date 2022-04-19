@@ -1,9 +1,15 @@
 .example {
   background: #eaeaea;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.example__container {
+  @include container();
 }
 
 .example__title {
-  margin-top: 25px;
+  margin: 0;
 }
 
 .example__text {
@@ -21,11 +27,28 @@
 }
 
 .example__outlay {
+  @include fonts();
+  font-size: 14px;
+  line-height: 20px;
   text-align: center;
+  text-transform: uppercase;
+  color: #000000;
   margin-bottom: 40px;
   margin-top: 20px;
 }
 
+.example__number {
+  @include fonts();
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+
 .example__description {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
   margin: 0;
+  margin-top: 8px;
 }

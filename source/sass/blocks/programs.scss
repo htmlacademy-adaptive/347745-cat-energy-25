@@ -1,3 +1,7 @@
+.programs {
+  @include container();
+}
+
 .programs__list {
   margin: 0;
   padding: 0;
@@ -7,12 +11,12 @@
 .programs__item {
   padding: 20px;
   margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
 }
 
 .programs__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  @include fonts();
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
@@ -21,17 +25,20 @@
 }
 
 .programs__text {
-  margin: 25px 0;
+  margin: 0;
+  padding: 25px 0;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .programs__link {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  @include fonts();
   font-size: 16px;
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  align-self: start;
 }

@@ -1,13 +1,13 @@
 .extra {
-  margin: 0;
+  @include container();
   padding: 0;
   box-sizing: border-box;
   border: none;
 }
 
 .extra__title {
+  margin: 0;
   margin-bottom: 35px;
-  margin-top: 22px;
 }
 
 .extra__list {
@@ -17,9 +17,7 @@
 }
 
 .extra__meaning {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  @include fonts();
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;

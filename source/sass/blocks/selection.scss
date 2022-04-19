@@ -1,56 +1,30 @@
-@mixin fonts {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #444444;
+.selection__title-wrapper {
+  @include container();
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.selection__title {
+  margin: 0;
 }
 
 .selection__text {
-  margin: 38px 0;
+  margin: 0;
+  margin-top: 35px;
 }
 
-.data {
-  display: flex;
-  flex-direction: column;
+.selection__list {
   margin: 0;
   padding: 0;
-  padding-bottom: 10px;
-  box-sizing: border-box;
-  border: none;
+  list-style-type: none;
 }
 
-.input {
-  padding: 13px 15px;
-}
-
-.selection__meaning {
-  @include fonts();
-  margin-bottom: 14px;
-}
-
-.selection__input {
-  @include fonts();
-  border: 1px solid #e7e7e7;
-  margin-left: 13px;
-}
-
-.selection__input--name {
-  width: 68%;
-}
-
-.selection__input--weight {
-  width: 60%;
-}
-
-.selection__input--age {
-  width: 48.2%;
+.selection__item {
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .selection__button {
-  width: 100%;
+  @include container();
   border: none;
 }
 

@@ -1,6 +1,14 @@
 .main-header {
+  padding: 20px 0;
+}
+
+.main-header--line {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.main-header__wrapper {
+  @include container();
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
 }

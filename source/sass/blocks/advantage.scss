@@ -1,3 +1,6 @@
+.advantage {
+  @include container();
+}
 
 .advantage__title {
   margin-top: 20px;
@@ -13,4 +16,5 @@
 
 .advantage__item {
   margin-bottom: 20px;
+  padding-left: 80px;
 }

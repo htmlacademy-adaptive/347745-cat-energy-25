@@ -1,22 +1,24 @@
 .program-selection {
-  background-image: url("../img/index/index-background.jpg");
+  background: linear-gradient(
+      rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)
+    ),
+    url("../img/index/index-background.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: contain;
+  background-size: 320px 302px;
+  padding-top: 27px;
 }
 
 .program-selection__title {
   text-align: center;
-  margin-top: 27px;
+  margin: 0;
 }
 
 .program-selection__link {
-  margin: 0 auto;
-  display: block;
-  width: 280px;
+  @include container();
   padding: 10px 0;
   margin-bottom: 20px;
-  text-decoration: none;
 }
 
 .program-selection__text {
