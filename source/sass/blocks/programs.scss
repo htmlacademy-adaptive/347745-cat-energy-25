@@ -1,5 +1,5 @@
 .programs {
-  @include container();
+  @include container($mobile-container);
 }
 
 .programs__list {
@@ -41,4 +41,62 @@
   display: block;
   margin-top: 20px;
   align-self: start;
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    @include container($tablet-container);
+  }
+
+  .programs__item {
+    padding: 77px 316px 57px 52px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .programs__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .programs__text {
+    border-bottom: none;
+    color: #000000;
+  }
+
+  .programs__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    @include container($detsktop-container);
+  }
+
+  .programs__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programs__item {
+    padding: 50px;
+    width: 570px;
+    box-sizing: border-box;
+  }
+
+  .programs__title {
+    padding-left: 165px;
+  }
+
+  .programs__text {
+    padding-top: 73px;
+    color: #000000;
+  }
+
+  .programs__link {
+    margin: 0;
+  }
 }

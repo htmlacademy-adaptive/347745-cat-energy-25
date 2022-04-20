@@ -1,5 +1,5 @@
 .comments {
-  @include container();
+  @include container($mobile-container);
   padding: 0;
   box-sizing: border-box;
   padding-bottom: 22px;

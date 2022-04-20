@@ -1,5 +1,5 @@
 .product__title {
-  @include container();
+  @include container($mobile-container);
   padding-top: 20px;
   padding-bottom: 40px;
 }
@@ -18,11 +18,11 @@
 }
 
 .product-card__link {
-  @include container();
+  @include container($mobile-container);
 }
 
 .product__button {
-  @include container();
+  @include container($mobile-container);
   text-align: center;
   display: block;
   text-decoration: none;

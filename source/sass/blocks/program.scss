@@ -1,5 +1,5 @@
 .program {
-  @include container();
+  @include container($mobile-container);
   display: flex;
   flex-direction: column;
   padding: 0;

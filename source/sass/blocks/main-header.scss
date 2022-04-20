@@ -1,5 +1,5 @@
 .main-header {
-  padding: 20px 0;
+
 }
 
 .main-header--line {
@@ -7,8 +7,42 @@
 }
 
 .main-header__wrapper {
-  @include container();
+  @include container($mobile-container);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__wrapper {
+    @include container($tablet-container);
+  }
+
+  .main-header__toggle {
+    display: none;
+  }
+
+  .main-header__logo:not(:last-child) {
+    margin-right: 12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .main-header {
+    background: linear-gradient(
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      ),
+      url("/img/index/index-background.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 720px 694px;
+    margin-bottom: 82px;
+  }
+  .main-header__wrapper {
+    @include container($detsktop-container);
+
+  }
 }

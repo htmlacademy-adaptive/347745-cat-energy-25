@@ -1,5 +1,5 @@
 .additional {
-  @include container();
+  @include container($mobile-container);
 }
 
 .additional__list {
@@ -25,9 +25,7 @@
 }
 
 .additional__sub-title {
-  font-family: $fonts;
-  font-style: normal;
-  font-weight: 400;
+  @include fonts();
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;

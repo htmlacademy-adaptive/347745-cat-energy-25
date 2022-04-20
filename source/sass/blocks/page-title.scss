@@ -8,3 +8,16 @@
 .page-title--color {
   color: #ffffff;
 }
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    @include fonts();
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+  }
+  
+  .page-title--color {
+    color: #000000;
+  }
+}

@@ -1,12 +1,12 @@
 .main-footer__cotainer {
-  @include container();
+  @include container($mobile-container);
   padding-top: 35px;
   padding-bottom: 20px;
 }
 
 .main-footer__image {
   display: block;
-  margin: auto;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
@@ -18,6 +18,7 @@
   list-style-type: none;
   display: flex;
   justify-content: center;
+  align-items: center;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -40,4 +41,34 @@
 
 .main-footer__icon {
   align-self: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__cotainer {
+    @include container($tablet-container);
+    padding-top: 58px;
+    padding-bottom: 55px;
+    display: flex;
+  }
+
+  .main-footer__list {
+    border-top: none;
+    border-bottom: none;
+    width: 132px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .main-footer__item:not(:last-child) {
+    margin-right: auto;
+  }
+
+  .main-footer__image {
+    margin: 0;
+    align-self: center;
+  }
+
+  .main-footer__icon {
+    margin-left: 25px;
+  }
 }

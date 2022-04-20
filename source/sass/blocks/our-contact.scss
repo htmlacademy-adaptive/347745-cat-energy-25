@@ -1,9 +1,7 @@
 .our-contact__wrapper {
-  @include container();
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 
 .our-contact__text {
@@ -13,8 +11,46 @@
   text-transform: uppercase;
   color: #111111;
   margin: 0;
+  width: 140px;
+  margin-right: 10px;
 }
 
 .our-contact__adress {
+  width: 140px;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .our-contact__wrapper {
+    padding: 56px 40px;
+  }
+
+  .our-contact__text {
+    width: 170px;
+  }
+
+  .our-contact__adress {
+    text-align: end;
+    width: 160px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .our-contact {
+    position: absolute;
+    width: 565px;
+  }
+
+  .our-contact__wrapper {
+    padding: 60px 80px 56px 80px;
+  }
+
+  .our-contact__text {
+    width: 163px;
+  }
+
+  .our-contact__adress {
+    text-align: start;
+    width: 155px;
+  }
 }

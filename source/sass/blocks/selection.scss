@@ -1,5 +1,5 @@
 .selection__title-wrapper {
-  @include container();
+  @include container($mobile-container);
   padding-top: 25px;
   padding-bottom: 40px;
 }
@@ -24,7 +24,7 @@
 }
 
 .selection__button {
-  @include container();
+  @include container($mobile-container);
   border: none;
 }
 
