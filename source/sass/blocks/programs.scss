@@ -16,10 +16,7 @@
 }
 
 .programs__title {
-  @include fonts();
-  font-size: 24px;
-  line-height: 37px;
-  text-transform: uppercase;
+  @include fonts(24px, 37px);
   color: #000000;
   margin: 0;
 }
@@ -31,11 +28,8 @@
 }
 
 .programs__link {
-  @include fonts();
-  font-size: 16px;
-  line-height: 16px;
+  @include fonts(16px, 16px);
   text-align: center;
-  text-transform: uppercase;
   color: #000000;
   text-decoration: none;
   display: block;
@@ -56,8 +50,7 @@
   }
 
   .programs__title {
-    font-size: 36px;
-    line-height: 36px;
+    @include fonts(36px, 36px);
   }
 
   .programs__text {
@@ -66,8 +59,7 @@
   }
 
   .programs__link {
-    font-size: 20px;
-    line-height: 30px;
+    @include fonts(20px, 30px);
   }
 }
 

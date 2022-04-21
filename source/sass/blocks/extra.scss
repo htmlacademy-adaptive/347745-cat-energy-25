@@ -1,6 +1,8 @@
 .extra {
   @include container($mobile-container);
   padding: 0;
+  margin: 22px auto;
+  margin-bottom: 35px;
   box-sizing: border-box;
   border: none;
 }
@@ -17,14 +19,28 @@
 }
 
 .extra__meaning {
-  @include fonts();
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
+  @include fonts(16px, 18px);
   color: #000000;
-  margin-left: 60px;
+  padding-left: 60px;
 }
 
-.extra__item {
+.extra__item:not(:last-child) {
   margin-bottom: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .extra {
+    @include container($tablet-form-container);
+    margin: 60px auto;
+  }
+
+  .extra__meaning {
+    @include fonts(20px, 30px);
+  }
+
+  .extra__list {
+    display: grid;
+    grid-template-columns: repeat(2, 221px);
+    gap: 32px 123px;
+  }
 }

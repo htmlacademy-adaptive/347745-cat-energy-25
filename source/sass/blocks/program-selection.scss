@@ -32,10 +32,7 @@
 }
 
 .program-selection__text {
-  @include fonts();
-  font-size: 14px;
-  line-height: 14px;
-  text-transform: uppercase;
+  @include fonts(14px, 14px);
   text-align: center;
   color: #ffffff;
   margin-top: 25px;
@@ -63,12 +60,11 @@
   }
 
   .program-selection__text {
+    @include fonts(20px, 20px);
     color: #000000;
     text-align: start;
     margin-top: 41px;
     margin-bottom: 50px;
-    font-size: 20px;
-    line-height: 20px;
   }
 }
 

@@ -1,8 +1,5 @@
 .site-button {
-  @include fonts();
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
+  @include fonts(14px, 18px);
   background: #68b738;
   color: #ffffff;
   text-align: center;

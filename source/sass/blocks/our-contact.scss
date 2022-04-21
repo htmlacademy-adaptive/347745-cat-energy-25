@@ -1,14 +1,12 @@
 .our-contact__wrapper {
+  @include container($mobile-container);
   display: flex;
   justify-content: space-between;
   padding: 20px;
 }
 
 .our-contact__text {
-  @include fonts();
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
+  @include fonts(16px, 20px);
   color: #111111;
   margin: 0;
   width: 140px;
@@ -22,7 +20,7 @@
 
 @media (min-width: $tablet-width) {
   .our-contact__wrapper {
-    padding: 56px 40px;
+    @include container($tablet-form-container);
   }
 
   .our-contact__text {
