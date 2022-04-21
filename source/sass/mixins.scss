@@ -11,3 +11,7 @@
   width: $container-width;
   margin: 0 auto;
 }
+
+@mixin margin {
+  margin-left: calc(6.93% - 13px);
+}

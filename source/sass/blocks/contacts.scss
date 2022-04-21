@@ -1,16 +1,20 @@
 .contacts {
-  @include container($mobile-container);
-  display: flex;
-  flex-direction: column;
-  margin: 23px auto;
-  box-sizing: border-box;
   border: none;
+  padding: 0;
+  border-top: 2px solid #68b738;
 }
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 35px;
-  padding-top: 26px;
+  max-width: 210px;
+}
+
+.contacts__wrapper {
+  @include container($mobile-container);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 22px auto 22px auto;
 }
 
 .contacts__meaning {
@@ -35,12 +39,18 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
+    margin-top: 70px;
+  }
+
+  .contacts__wrapper {
     @include container($tablet-form-container);
-    margin: 75px auto;
+    margin: 70px auto;
   }
 
   .contacts__title {
-    margin-bottom: 76px;
+    @include margin;
+    padding: 0 40px;
+    max-width: 100%;
   }
 
   .contacts__meaning {
@@ -53,5 +63,26 @@
 
   .contacts__input {
     @include fonts(20px, 30px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    @include container($detsktop-container);
+    flex-direction: row;
+    margin: 75px auto;
+  }
+
+  .contacts__title {
+    margin-left: 53px;
+  }
+
+  .contacts__meaning {
+    width: 50%;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 80px;
+    }
   }
 }
