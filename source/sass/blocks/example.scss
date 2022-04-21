@@ -1,9 +1,15 @@
 .example {
   background: #eaeaea;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.example__container {
+  @include container($mobile-container);
 }
 
 .example__title {
-  margin-top: 25px;
+  margin: 0;
 }
 
 .example__text {
@@ -18,14 +24,135 @@
 
 .example__items {
   text-align: center;
+  padding: 15px 24px 0 24px;
 }
 
 .example__outlay {
+  @include fonts();
+  font-size: 14px;
+  line-height: 20px;
   text-align: center;
+  text-transform: uppercase;
+  color: #000000;
   margin-bottom: 40px;
   margin-top: 20px;
 }
 
+.example__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.example__number {
+  @include fonts();
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+
 .example__description {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
   margin: 0;
+  margin-top: 8px;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background: linear-gradient(to bottom, #ffffff 50%, #eaeaea 50%);
+    padding-top: 25px;
+    padding-bottom: 40px;
+    border-top: 1px solid #e6e6e6;
+  }
+
+  .example__container {
+    @include container($tablet-container);
+  }
+
+  .example__text {
+    margin-top: 63px;
+    margin-bottom: 54px;
+  }
+
+  .example__outer-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  .example__outlay {
+    margin: 0;
+    margin-left: auto;
+    font-size: 20px;
+  }
+
+  .example__items {
+    margin-right: 40px;
+  }
+
+  .example__number {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__description {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .example__text-separator {
+    display: block;
+    text-align: end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    background: linear-gradient(to bottom, #ffffff 26%, 20%, #eaeaea 50%);
+    border-top: none;
+    padding-bottom: 0;
+  }
+
+  .example__container {
+    @include container($detsktop-container);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__container-inner {
+    width: 436px;
+  }
+
+  .example__text {
+    margin-top: 146px;
+    margin-bottom: 64px;
+  }
+
+  .example__outer-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .example__outlay {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .example__text-separator {
+    margin-right: 47px;
+  }
+
+  .example__number {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__description {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }

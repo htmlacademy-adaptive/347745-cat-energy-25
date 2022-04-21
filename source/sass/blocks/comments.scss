@@ -1,5 +1,5 @@
 .comments {
-  margin: 0;
+  @include container($mobile-container);
   padding: 0;
   box-sizing: border-box;
   padding-bottom: 22px;
@@ -11,9 +11,7 @@
 }
 
 .comments__input {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  @include fonts();
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;

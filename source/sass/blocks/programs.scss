@@ -1,3 +1,7 @@
+.programs {
+  @include container($mobile-container);
+}
+
 .programs__list {
   margin: 0;
   padding: 0;
@@ -7,12 +11,12 @@
 .programs__item {
   padding: 20px;
   margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
 }
 
 .programs__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  @include fonts();
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
@@ -21,17 +25,78 @@
 }
 
 .programs__text {
-  margin: 25px 0;
+  margin: 0;
+  padding: 25px 0;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .programs__link {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  @include fonts();
   font-size: 16px;
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  align-self: start;
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    @include container($tablet-container);
+  }
+
+  .programs__item {
+    padding: 77px 316px 57px 52px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .programs__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .programs__text {
+    border-bottom: none;
+    color: #000000;
+  }
+
+  .programs__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    @include container($detsktop-container);
+  }
+
+  .programs__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programs__item {
+    padding: 50px;
+    width: 570px;
+    box-sizing: border-box;
+  }
+
+  .programs__title {
+    padding-left: 165px;
+  }
+
+  .programs__text {
+    padding-top: 73px;
+    color: #000000;
+  }
+
+  .programs__link {
+    margin: 0;
+  }
 }
