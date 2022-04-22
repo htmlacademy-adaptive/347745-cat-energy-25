@@ -4,6 +4,10 @@
   border-top: 2px solid #68b738;
 }
 
+.comments__title {
+  @include padding;
+}
+
 .comments__wrapper {
   @include container($mobile-container);
   box-sizing: border-box;

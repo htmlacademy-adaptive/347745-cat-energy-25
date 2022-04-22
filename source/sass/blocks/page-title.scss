@@ -1,6 +1,7 @@
 .page-title {
   @include fonts(36px, 36px);
   color: #000000;
+  text-transform: none;
 }
 
 .page-title--color {
@@ -11,6 +12,7 @@
   .page-title {
     @include fonts(60px, 60px);
     color: #000000;
+    text-transform: none;
   }
 
   .page-title--color {

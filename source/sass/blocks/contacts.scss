@@ -5,6 +5,7 @@
 }
 
 .contacts__title {
+  @include padding;
   margin: 0;
   max-width: 210px;
 }
@@ -74,7 +75,7 @@
   }
 
   .contacts__title {
-    margin-left: 53px;
+    margin-left: 67px;
   }
 
   .contacts__meaning {

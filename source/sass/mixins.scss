@@ -13,5 +13,10 @@
 }
 
 @mixin margin {
-  margin-left: calc(6.93% - 13px);
+  margin-left: calc((6.93% - 27px) * 1.5);
+}
+
+@mixin padding {
+  padding-right: 22px;
+  padding-left: 10%;
 }

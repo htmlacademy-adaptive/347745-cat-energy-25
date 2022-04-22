@@ -21,6 +21,7 @@
 @media (min-width: $tablet-width) {
   .our-contact__wrapper {
     @include container($tablet-form-container);
+    padding: 70px;
   }
 
   .our-contact__text {
