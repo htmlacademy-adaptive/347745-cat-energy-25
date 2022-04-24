@@ -1,15 +1,67 @@
-
-.main-header__wrapper {
-  @include container($mobile-container);
+.main-header__wrapper-inner {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+
+  padding-left: 20px;
+}
+
+.main-header__img {
+  display: block;
+}
+
+.main-header__toggle {
+  position: relative;
+  width: 66px;
+  height: 66px;
+  border: none;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.main-header--closed::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 21px;
+  width: 24px;
+  height: 2px;
+  background: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.main-header--opened {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 31px;
+    left: 21px;
+    width: 24px;
+    height: 2px;
+    background: #000000;
+  }
+
+  &::before {
+    box-shadow: none;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .main-header {
+    padding: 20px 0;
+  }
+
   .main-header__wrapper {
-    @include container($tablet-container);
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
   }
 
   .main-header__toggle {
@@ -22,10 +74,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  // .main-header {
-  //   margin-bottom: 82px;
-  // }
-
   .main-header--img {
     background: linear-gradient(
         rgba(104, 183, 56, 0.85),
@@ -39,5 +87,6 @@
 
   .main-header__wrapper {
     @include container($detsktop-container);
+    padding: 0 110px;
   }
 }

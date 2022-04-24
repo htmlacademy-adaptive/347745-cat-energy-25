@@ -1,21 +1,27 @@
 .contacts {
   border: none;
   padding: 0;
-  border-top: 2px solid #68b738;
+  position: relative;
+}
+
+.contacts__title-wrapper {
+  @include decoreation-line;
+  display: flex;
 }
 
 .contacts__title {
-  @include padding;
+  @include caption;
   margin: 0;
-  max-width: 210px;
+  padding: 0 20px;
+  background: #ffffff;
 }
 
 .contacts__wrapper {
-  @include container($mobile-container);
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   margin: 22px auto 22px auto;
+  padding: 0 20px;
 }
 
 .contacts__meaning {

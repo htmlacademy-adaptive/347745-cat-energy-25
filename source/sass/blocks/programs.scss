@@ -1,5 +1,5 @@
 .programs {
-  @include container($mobile-container);
+  padding: 0 20px;
 }
 
 .programs__list {
@@ -9,6 +9,7 @@
 }
 
 .programs__item {
+  @include back-color;
   padding: 20px;
   margin-bottom: 25px;
   display: flex;

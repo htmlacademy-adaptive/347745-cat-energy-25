@@ -10,39 +10,48 @@
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__wrapper">
-        <a class="main-header__logo" href="index.html">
-          <img
-            src="img/index/logo/logo-mobile.svg"
-            alt="Счастливый котик"
-            width="34"
-            height="38"
-          />
-        </a>
-        <a class="main-header__logo" href="index.html">
-          <img
-            src="img/index/logo/logo2.svg"
-            alt="логотип кат энерджи"
-            width="101"
-            height="18"
-          />
-        </a>
-        <button class="main-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <nav class="main-header__nav main-nav">
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link"> Главная </a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#"> каталог продукции </a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#"> подбор программы </a>
-              </li>
-            </ul>
-          </div>
+        <div class="main-header__wrapper-inner">
+          <a class="main-header__logo" href="index.html">
+            <img
+              class="main-header__img"
+              src="img/index/logo/logo-mobile.svg"
+              alt="Счастливый котик"
+              width="34"
+              height="38"
+            />
+          </a>
+          <a
+            class="main-header__logo main-header__logo--center"
+            href="index.html"
+          >
+            <img
+              class="main-header__img"
+              src="img/index/logo/logo2.svg"
+              alt="логотип кат энерджи"
+              width="101"
+              height="18"
+            />
+          </a>
+          <button class="main-header__toggle main-header--closed" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <nav class="main-header__nav main-nav main-nav--hidden main-nav--nojs">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--color"> Главная </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--color" href="#">
+                каталог продукции
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--color" href="#">
+                подбор программы
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -103,9 +112,12 @@
             </li>
           </ul>
           <fieldset class="contacts">
-            <legend class="contacts__title caption">
-              Контактные данные (владельца кота)
-            </legend>
+            <div class="contacts__title-wrapper">
+              <legend class="contacts__title">
+                Контактные данные<br />
+                (владельца кота)
+              </legend>
+            </div>
             <div class="contacts__wrapper">
               <label class="contacts__meaning">
                 E-mail:*
@@ -126,7 +138,9 @@
             </div>
           </fieldset>
           <fieldset class="comments">
-            <legend class="comments__title caption">Комментарий</legend>
+            <div class="comments__title-wrapper">
+              <legend class="comments__title">Комментарий</legend>
+            </div>
             <div class="comments__wrapper">
               <textarea
                 class="comments__input"
@@ -136,7 +150,9 @@
             </div>
           </fieldset>
           <fieldset class="extra">
-            <legend class="extra__title caption">Дополнительно</legend>
+            <div class="extra__title-wrapper">
+              <legend class="extra__title">Дополнительно</legend>
+            </div>
             <div class="extra__wrapper">
               <label class="extra__meaning">
                 сахарозаменитель
@@ -164,7 +180,7 @@
           </div>
         </form>
       </section>
-      <section class="our-contact back-color">
+      <section class="our-contact">
         <div class="our-contact__wrapper">
           <h2 class="visually-hidden">Наш адрес</h2>
           <p class="our-contact__text">приглашаем к сотрудничеству дилеров!</p>
@@ -184,7 +200,7 @@
         />
       </section>
     </main>
-    <footer class="main-footer back-color">
+    <footer class="main-footer">
       <div class="main-footer__cotainer">
         <a href="index.html">
           <img
@@ -265,5 +281,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

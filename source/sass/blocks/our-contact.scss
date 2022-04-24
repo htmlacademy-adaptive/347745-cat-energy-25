@@ -1,5 +1,8 @@
+.our-contact {
+  @include back-color;
+}
+
 .our-contact__wrapper {
-  @include container($mobile-container);
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -20,8 +23,7 @@
 
 @media (min-width: $tablet-width) {
   .our-contact__wrapper {
-    @include container($tablet-form-container);
-    padding: 70px;
+    padding: 56px 70px 56px 70px;
   }
 
   .our-contact__text {

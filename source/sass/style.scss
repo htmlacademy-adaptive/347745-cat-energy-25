@@ -1,6 +1,6 @@
-@import "../sass/mixins.scss";
-@import "../sass/variables.scss";
-@import "../sass/global.scss";
+@import "./mixins.scss";
+@import "./variables.scss";
+@import "./global.scss";
 @import "./blocks/program-selection.scss";
 @import "./blocks/map.scss";
 @import "./blocks/our-contact.scss";
@@ -8,7 +8,6 @@
 @import "./blocks/advantage.scss";
 @import "./blocks/example.scss";
 @import "./blocks/main-header.scss";
-@import "./blocks/caption.scss";
 @import "./blocks/comments.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/extra.scss";
@@ -19,7 +18,6 @@
 @import "./blocks/gift.scss";
 @import "./blocks/product-card.scss";
 @import "./blocks/product.scss";
-@import "./blocks/site-button.scss";
 @import "./blocks/fonts.scss";
 @import "./blocks/page-title.scss";
 @import "./blocks/page-body.scss";

@@ -1,5 +1,4 @@
 .product-card__link {
-  @include container($mobile-container);
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -37,8 +36,26 @@
   text-align: start;
 }
 
+.product-card__button {
+  @include button;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  margin: 0 auto 25px auto;
+}
+
+.product-card--color {
+  background: #f2f2f2;
+  color: #444444;
+}
+
 .product-card__meaning {
   text-align: end;
+}
+
+.product-card--extra-link {
+  display: flex;
+  flex-direction: column;
 }
 
 .product-card--title {
@@ -57,7 +74,6 @@
   }
 
   .product-card__link {
-    @include container($tablet-container);
     flex-direction: column;
     min-height: 391px;
   }
@@ -86,6 +102,15 @@
 
   .product-card__criterion {
     border-bottom: 1px solid #cdcdcd;
+  }
+
+  .product-card__button {
+    @include button;
+  }
+
+  .product-card--color {
+    background: #f2f2f2;
+    color: #444444;
   }
 
   .product-card--extra {

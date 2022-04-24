@@ -1,11 +1,6 @@
 .example {
   background: #eaeaea;
-  padding-top: 25px;
-  padding-bottom: 40px;
-}
-
-.example__container {
-  @include container($mobile-container);
+  padding: 25px 20px 40px 20px;
 }
 
 .example__title {

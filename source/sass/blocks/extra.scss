@@ -1,20 +1,25 @@
 .extra {
   padding: 0;
-  margin: 22px auto;
   margin-bottom: 35px;
-  box-sizing: border-box;
   border: none;
-  border-top: 2px solid #68b738;
+  position: relative;
+}
+
+.extra__title-wrapper {
+  @include decoreation-line;
+  display: flex;
 }
 
 .extra__title {
-  @include padding;
+  @include caption;
+  padding: 0 20px;
   margin: 0;
+  background: #ffffff;
 }
 
 .extra__wrapper {
-  @include container($mobile-container);
-  margin: 35px auto 0 auto;
+  padding: 0 20px;
+  margin-top: 35px;
   display: flex;
   flex-direction: column;
 }
