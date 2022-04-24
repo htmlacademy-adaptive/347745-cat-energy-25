@@ -2,27 +2,22 @@
   @include container($mobile-container);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 0;
-  padding-bottom: 24px;
+  margin: 24px auto;
   box-sizing: border-box;
   border: none;
 }
 
 .data__meaning {
-  @include fonts();
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
+  @include fonts(16px, 18px);
   color: #444444;
   display: flex;
   align-items: center;
 }
 
 .data__input {
-  @include fonts();
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
+  @include fonts(16px, 18px);
   color: #444444;
   border: 1px solid #e7e7e7;
   margin-left: 13px;
@@ -32,4 +27,32 @@
 
 .data__meaning:not(:last-child) {
   margin-bottom: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .data {
+    @include container($tablet-form-container);
+    margin: 72px auto;
+  }
+
+  .data__meaning {
+    @include fonts(20px, 30px);
+    color: #444444;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .data__input {
+    @include fonts(20px, 30px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .data {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
 }

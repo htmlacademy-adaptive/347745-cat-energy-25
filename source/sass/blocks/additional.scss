@@ -1,4 +1,17 @@
 .additional {
+  position: relative;
+
+  &::before {
+    content: "";
+    border: 2px solid #68b738;
+    width: 90%;
+    position: absolute;
+    top: 14px;
+    left: 10%;
+  }
+}
+
+.additional__wrapper {
   @include container($mobile-container);
 }
 
@@ -16,6 +29,8 @@
 }
 
 .additional__title {
+  background-color: #ffffff;
+  padding-right: 25px;
   margin-top: 25px;
   margin-bottom: 36px;
 }
@@ -25,10 +40,7 @@
 }
 
 .additional__sub-title {
-  @include fonts();
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
+  @include fonts(16px, 16px);
   color: #222222;
   margin: 13px 0;
 }
@@ -48,4 +60,114 @@
 
 .additional__meaning {
   text-align: end;
+}
+
+@media (min-width: $tablet-width) {
+  .additional {
+    &::before {
+      content: "";
+      border: 2px solid #68b738;
+      width: 100%;
+      position: absolute;
+      top: 17px;
+      left: 0;
+    }
+  }
+
+  .additional__title {
+    position: relative;
+    width: 345px;
+    background-color: #ffffff;
+    padding: 0 35px;
+  }
+
+  .additional__wrapper {
+    @include container($tablet-container);
+  }
+
+  .additional__list {
+    border-top: none;
+  }
+
+  .additional__item {
+    border: 1px solid #cdcdcd;
+    padding: 28px 38px;
+  }
+
+  .additional__link {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additional__items {
+    width: 50%;
+  }
+
+  .additional__criterion {
+    text-align: end;
+  }
+
+  .additional__meaning {
+    width: 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional {
+    &::before {
+      content: "";
+      border: 2px solid #68b738;
+      width: 85px;
+      position: absolute;
+      top: 17px;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      border: 2px solid #68b738;
+      width: 960px;
+      position: absolute;
+      top: 17px;
+      right: 0;
+    }
+  }
+
+  .additional__title {
+    width: 400px;
+    padding: 0;
+  }
+
+  .additional__wrapper {
+    @include container($detsktop-container);
+    margin-bottom: 86px;
+  }
+
+  .additional__wrapper-inner {
+    display: flex;
+  }
+
+  .additional__list {
+    width: 100%;
+    border-top: 1px solid #cdcdcd;
+  }
+
+  .additional__item {
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 17px 0;
+    display: flex;
+  }
+
+  .additional__link {
+    width: 100%;
+  }
+
+  .additional__items {
+    margin-right: 40px;
+  }
+
+  .additional__button {
+    width: 244px;
+  }
 }

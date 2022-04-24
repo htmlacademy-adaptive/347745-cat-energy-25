@@ -1,8 +1,7 @@
 .page-title {
-  @include fonts();
-  font-size: 36px;
-  line-height: 36px;
+  @include fonts(36px, 36px);
   color: #000000;
+  text-transform: none;
 }
 
 .page-title--color {
@@ -11,10 +10,9 @@
 
 @media (min-width: $tablet-width) {
   .page-title {
-    @include fonts();
-    font-size: 60px;
-    line-height: 60px;
+    @include fonts(60px, 60px);
     color: #000000;
+    text-transform: none;
   }
 
   .page-title--color {

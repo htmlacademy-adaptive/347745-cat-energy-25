@@ -1,33 +1,32 @@
 .contacts {
-  @include container($mobile-container);
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 23px;
-  box-sizing: border-box;
   border: none;
+  padding: 0;
+  border-top: 2px solid #68b738;
 }
 
 .contacts__title {
+  @include padding;
   margin: 0;
-  margin-bottom: 35px;
-  padding-top: 26px;
+  max-width: 210px;
+}
+
+.contacts__wrapper {
+  @include container($mobile-container);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 22px auto 22px auto;
 }
 
 .contacts__meaning {
-  @include fonts();
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
+  @include fonts(16px, 18px);
   color: #444444;
   display: flex;
   align-items: center;
 }
 
 .contacts__input {
-  @include fonts();
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
+  @include fonts(16px, 18px);
   color: #444444;
   border: 1px solid #cdcdcd;
   margin-left: 8px;
@@ -37,4 +36,54 @@
 
 .contacts__meaning:not(:last-child) {
   margin-bottom: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    margin-top: 70px;
+  }
+
+  .contacts__wrapper {
+    @include container($tablet-form-container);
+    margin: 70px auto;
+  }
+
+  .contacts__title {
+    @include margin;
+    padding: 0 40px;
+    max-width: 100%;
+  }
+
+  .contacts__meaning {
+    @include fonts(20px, 30px);
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .contacts__input {
+    @include fonts(20px, 30px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    @include container($detsktop-container);
+    flex-direction: row;
+    margin: 75px auto;
+  }
+
+  .contacts__title {
+    margin-left: 67px;
+  }
+
+  .contacts__meaning {
+    width: 50%;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 80px;
+    }
+  }
 }

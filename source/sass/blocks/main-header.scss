@@ -1,6 +1,3 @@
-.main-header--line {
-  border-bottom: 1px solid #d9d9d9;
-}
 
 .main-header__wrapper {
   @include container($mobile-container);
@@ -25,7 +22,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-header {
+  // .main-header {
+  //   margin-bottom: 82px;
+  // }
+
+  .main-header--img {
     background: linear-gradient(
         rgba(104, 183, 56, 0.85),
         rgba(104, 183, 56, 0.85)
@@ -34,7 +35,6 @@
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 720px 694px;
-    margin-bottom: 82px;
   }
 
   .main-header__wrapper {

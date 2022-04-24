@@ -1,30 +1,79 @@
 .extra {
-  @include container($mobile-container);
   padding: 0;
+  margin: 22px auto;
+  margin-bottom: 35px;
   box-sizing: border-box;
   border: none;
+  border-top: 2px solid #68b738;
 }
 
 .extra__title {
+  @include padding;
   margin: 0;
-  margin-bottom: 35px;
 }
 
-.extra__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+.extra__wrapper {
+  @include container($mobile-container);
+  margin: 35px auto 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .extra__meaning {
-  @include fonts();
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
+  @include fonts(16px, 18px);
   color: #000000;
-  margin-left: 60px;
+  padding-left: 60px;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
 }
 
-.extra__item {
-  margin-bottom: 25px;
+@media (min-width: $tablet-width) {
+  .extra {
+    margin: 30px auto;
+  }
+
+  .extra__title {
+    @include margin;
+    padding: 0 40px;
+  }
+
+  .extra__wrapper {
+    @include container($tablet-form-container);
+    display: grid;
+    grid-template-columns: repeat(2, 221px);
+    gap: 32px 123px;
+    margin: 50px auto;
+  }
+
+  .extra__meaning {
+    @include fonts(20px, 30px);
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra__wrapper {
+    @include container($detsktop-container);
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    margin: 50px auto;
+  }
+
+  .extra__title {
+    margin-left: 53px;
+  }
+
+  .extra__meaning {
+    width: 220px;
+
+    &:not(:last-child) {
+      margin-right: 104px;
+    }
+  }
 }

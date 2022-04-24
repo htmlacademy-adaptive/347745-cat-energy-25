@@ -1,3 +1,7 @@
+.selection {
+  border-top: 1px solid #d9d9d9;
+}
+
 .selection__title-wrapper {
   @include container($mobile-container);
   padding-top: 25px;
@@ -9,12 +13,16 @@
 }
 
 .selection__text {
+  @include fonts(14px, 18px);
+  color: #000000;
   margin: 0;
   margin-top: 35px;
+  width: 226px;
 }
 
 .selection__list {
   margin: 0;
+  margin-bottom: 25px;
   padding: 0;
   list-style-type: none;
 }
@@ -24,13 +32,13 @@
 }
 
 .selection__button {
-  @include container($mobile-container);
   border: none;
 }
 
-.selection__necessarily-wrapper {
+.selection__button-wrapper {
+  @include container($mobile-container);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   padding-top: 21px;
   padding-bottom: 35px;
 }
@@ -38,4 +46,67 @@
 .selection__necessarily {
   color: #000000;
   text-align: center;
+  display: block;
+  margin-top: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .selection {
+    border-top: none;
+  }
+
+  .selection__title-wrapper {
+    @include container($tablet-form-container);
+    padding: 25px 0 60px 0;
+  }
+
+  .selection__text {
+    @include fonts(20px, 30px);
+    width: 323px;
+  }
+
+  .selection__item {
+    border-bottom: none;
+  }
+
+  .selection__button-wrapper {
+    @include container($tablet-form-container);
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 75px;
+  }
+
+  .selection__button {
+    width: 230px;
+    margin: 0;
+  }
+
+  .selection__necessarily {
+    margin-top: 0;
+    margin-left: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection__title-wrapper {
+    @include container($detsktop-container);
+  }
+
+  .selection__list {
+    @include container($detsktop-container);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .selection__item {
+    width: 46%;
+  }
+
+  .selection__button-wrapper {
+    @include container($detsktop-container);
+  }
+
+  .selection__button {
+    width: 568px;
+  }
 }

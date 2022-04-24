@@ -16,12 +16,8 @@
 }
 
 .main-nav__link {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
+  @include fonts(20px, 20px);
   font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  text-transform: uppercase;
   color: #000000;
   text-decoration: none;
   display: block;
@@ -48,14 +44,12 @@
   }
 
   .main-nav__link {
-    @include fonts();
-    font-size: 18px;
-    line-height: 24px;
+    @include fonts(18px, 24px);
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav__link {
+  .main-nav__link--color {
     color: #ffffff;
   }
 }
