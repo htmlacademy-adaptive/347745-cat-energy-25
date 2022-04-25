@@ -1,0 +1,76 @@
+.program-selection {
+  @include container($mobile-container);
+  background: linear-gradient(
+      rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)
+    ),
+    url("../img/index/index-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 320px 302px;
+  padding-top: 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.program-selection__title {
+  text-align: center;
+  margin: 0;
+}
+
+.program-selection__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.program-selection__link {
+  @include container($mobile-container);
+  padding: 10px 0;
+  margin-bottom: 20px;
+  order: 1;
+}
+
+.program-selection__text {
+  @include fonts(14px, 14px);
+  text-align: center;
+  color: #ffffff;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .program-selection {
+    @include container($tablet-container);
+    background: none;
+    padding-left: 90px;
+    align-items: flex-start;
+  }
+
+  .program-selection__title {
+    text-align: start;
+    width: 420px;
+  }
+
+  .program-selection__link {
+    width: 244px;
+    margin: 0;
+    padding: 10px 0;
+    order: 0;
+  }
+
+  .program-selection__text {
+    @include fonts(20px, 20px);
+    color: #000000;
+    text-align: start;
+    margin-top: 41px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-selection {
+    @include container($detsktop-container);
+    padding-top: 27px;
+  }
+}

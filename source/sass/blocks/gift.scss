@@ -1,0 +1,36 @@
+.gift {
+  padding: 35px 0;
+}
+
+.gift__wrapper {
+  background-image: url("/img/catalog/cat-bag.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 290px;
+}
+
+.gift__text {
+  width: 60%;
+  margin: auto;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.gift__inner-wrapper {
+  background-color: #68b738d9;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    margin-left: 80px;
+    width: 245px;
+    height: 100%;
+    padding: 0;
+  }
+}

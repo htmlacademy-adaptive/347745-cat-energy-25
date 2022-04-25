@@ -1,0 +1,22 @@
+@mixin fonts($font-size, $line-height) {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-transform: uppercase;
+}
+
+@mixin container($container-width) {
+  width: $container-width;
+  margin: 0 auto;
+}
+
+@mixin margin {
+  margin-left: calc((6.93% - 27px) * 1.5);
+}
+
+@mixin padding {
+  padding-right: 22px;
+  padding-left: 10%;
+}

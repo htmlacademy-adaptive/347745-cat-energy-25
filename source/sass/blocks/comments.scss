@@ -1,0 +1,58 @@
+.comments {
+  padding: 0;
+  border: none;
+  border-top: 2px solid #68b738;
+}
+
+.comments__title {
+  @include padding;
+}
+
+.comments__wrapper {
+  @include container($mobile-container);
+  box-sizing: border-box;
+  margin: 22px auto;
+}
+
+.comments__input {
+  @include fonts(16px, 18px);
+  color: #444444;
+  border: 1px solid #e7e7e7;
+  width: 100%;
+  min-height: 150px;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+@media (min-width: $tablet-width) {
+  .comments {
+    margin: 0 auto 65px auto;
+  }
+
+  .comments__wrapper {
+    @include container($tablet-form-container);
+    margin: 76px auto 65px auto;
+  }
+
+  .comments__title {
+    @include margin;
+    padding: 0 40px;
+  }
+
+  .comments__input {
+    @include fonts(20px, 30px);
+    min-height: 174px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comments__wrapper {
+    @include container($detsktop-container);
+    margin: 76px auto 30px auto;
+  }
+
+  .comments__title {
+    margin-left: 53px;
+  }
+}
