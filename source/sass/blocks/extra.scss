@@ -28,10 +28,35 @@
   @include fonts(16px, 18px);
   color: #000000;
   padding-left: 60px;
+  position: relative;
 
   &:not(:last-child) {
     margin-bottom: 25px;
   }
+}
+
+.extra__control-mark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  border: 1px solid #cdcdcd;
+  width: 30px;
+  height: 30px;
+}
+
+.extra-control:checked + .extra__control-mark::before {
+  content: "";
+  background-image: url("/img/checkbox.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 14px;
+  background-position: center;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media (min-width: $tablet-width) {
@@ -68,6 +93,7 @@
     flex-direction: row;
     gap: 0;
     margin: 50px auto;
+    padding: 0;
   }
 
   .extra__title {

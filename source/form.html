@@ -89,24 +89,34 @@
               <fieldset class="selection__program program">
                 <label class="program__meaning">
                   <input
-                    class="visually-hidden"
+                    class="visually-hidden program__control"
                     type="radio"
-                    name="weight-loss"
+                    name="program-selection"
+                    value="weight loss"
                     checked
                   />
-                  похудение
+                  <span class="program__control-mark"></span>
+                  <span class="program__text">похудение</span>
                 </label>
                 <label class="program__meaning">
                   <input
-                    class="visually-hidden"
+                    class="visually-hidden program__control"
                     type="radio"
-                    name="weight-gain"
+                    name="program-selection"
+                    value="weight gain"
                   />
-                  Набор массы
+                  <span class="program__control-mark"></span>
+                  <span class="program__text">Набор массы</span>
                 </label>
                 <label class="program__meaning">
-                  <input class="visually-hidden" type="radio" name="help" />
-                  Не знаю (Нужен ваш совет)
+                  <input
+                    class="visually-hidden program__control"
+                    type="radio"
+                    name="program-selection"
+                    value="help"
+                  />
+                  <span class="program__control-mark"></span>
+                  <span class="program__text">Не знаю (Нужен ваш совет)</span>
                 </label>
               </fieldset>
             </li>
@@ -122,7 +132,7 @@
               <label class="contacts__meaning">
                 E-mail:*
                 <input
-                  class="contacts__input"
+                  class="contacts__input email"
                   type="email"
                   placeholder="kuklachev@gmail.com"
                 />
@@ -130,7 +140,7 @@
               <label class="contacts__meaning">
                 Телефон:*
                 <input
-                  class="contacts__input"
+                  class="contacts__input phone"
                   type="tel"
                   placeholder="8 (960) 900-60-90"
                 />
@@ -155,20 +165,24 @@
             </div>
             <div class="extra__wrapper">
               <label class="extra__meaning">
-                сахарозаменитель
-                <input class="visually-hidden" type="checkbox" checked />
+                <input class="visually-hidden extra-control" type="checkbox" checked />
+                <span class="extra__control-mark"></span>
+                <span class="extra__text">сахарозаменитель</span>
               </label>
               <label class="extra__meaning">
-                <input class="visually-hidden" type="checkbox" />
-                питьевая вода
+                <input class="visually-hidden extra-control" type="checkbox" />
+                <span class="extra__control-mark"></span>
+                <span class="extra__text">питьевая вода</span>
               </label>
               <label class="extra__meaning">
-                <input class="visually-hidden" type="checkbox" />
-                молоко
+                <input class="visually-hidden extra-control" type="checkbox" />
+                <span class="extra__control-mark"></span>
+                <span class="extra__text">молоко</span>
               </label>
               <label class="extra__meaning">
-                <input class="visually-hidden" type="checkbox" />
-                витамины
+                <input class="visually-hidden extra-control" type="checkbox" />
+                <span class="extra__control-mark"></span>
+                <span class="extra__text">витамины</span>
               </label>
             </div>
           </fieldset>
