@@ -1,5 +1,5 @@
 .programs {
-  @include container($mobile-container);
+  padding: 0 20px;
 }
 
 .programs__list {
@@ -9,6 +9,7 @@
 }
 
 .programs__item {
+  @include back-color;
   padding: 20px;
   margin-bottom: 25px;
   display: flex;
@@ -35,6 +36,20 @@
   display: block;
   margin-top: 20px;
   align-self: start;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-image: url("/img/programs-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 12px;
+    background-position: center;
+    width: 24px;
+    height: 12px;
+    position: absolute;
+    top: 0;
+    left: 100px;
+  }
 }
 
 @media (min-width: $tablet-width) {

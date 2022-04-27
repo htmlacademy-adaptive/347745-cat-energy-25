@@ -1,11 +1,6 @@
 .example {
   background: #eaeaea;
-  padding-top: 25px;
-  padding-bottom: 40px;
-}
-
-.example__container {
-  @include container($mobile-container);
+  padding: 25px 20px 40px 20px;
 }
 
 .example__title {
@@ -20,11 +15,23 @@
 .example__wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 34px;
+}
+
+.exemple__items-wrapper {
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 124px;
+  height: 56px;
 }
 
 .example__items {
-  text-align: center;
-  padding: 15px 24px 0 24px;
+  // text-align: center;
+  background: #eaeaea;
+  width: 87px;
+  margin: 0 auto;
+  margin-top: 15px;
 }
 
 .example__outlay {
@@ -50,7 +57,8 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  margin: 0;
+  width: 70px;
+  margin: 0 auto;
   margin-top: 8px;
 }
 

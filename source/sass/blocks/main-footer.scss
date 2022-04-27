@@ -1,7 +1,9 @@
+.main-footer {
+  @include back-color;
+}
+
 .main-footer__cotainer {
-  @include container($mobile-container);
-  padding-top: 35px;
-  padding-bottom: 20px;
+  padding: 35px 20px 20px 20px;
 }
 
 .main-footer__image {
@@ -45,10 +47,8 @@
 
 @media (min-width: $tablet-width) {
   .main-footer__cotainer {
-    @include container($tablet-container);
-    padding-top: 58px;
-    padding-bottom: 55px;
     display: flex;
+    padding: 58px 30px 58px 30px;
   }
 
   .main-footer__list {

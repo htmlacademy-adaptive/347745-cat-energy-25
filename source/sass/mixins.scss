@@ -20,3 +20,53 @@
   padding-right: 22px;
   padding-left: 10%;
 }
+
+@mixin button {
+  @include fonts(14px, 18px);
+  background: #68b738;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  text-decoration: none;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(20px, 20px);
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+}
+
+@mixin back-color {
+  background: #f2f2f2;
+}
+
+@mixin caption {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@mixin decoreation-line {
+  &::before {
+    content: "";
+    height: 2px;
+    background: #68b738;
+    position: absolute;
+    top: 16px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+}

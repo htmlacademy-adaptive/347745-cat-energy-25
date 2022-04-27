@@ -1,12 +1,26 @@
-.main-nav {
-  display: none;
-}
-
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
   border-top: 1px solid #e6e6e6;
+  position: absolute;
+  top: 66px;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+}
+
+.main-nav--nojs {
+  width: 100%;
+  display: block;
+
+  & .main-nav__list {
+    position: static;
+  }
+}
+
+.main-nav--hidden {
+  display: none;
 }
 
 .main-nav__item {
@@ -29,9 +43,15 @@
     margin-left: auto;
   }
 
+  .main-nav__toggle {
+    display: none;
+  }
+
   .main-nav__list {
+    position: static;
     display: flex;
     border: none;
+    background: none;
   }
 
   .main-nav__item {

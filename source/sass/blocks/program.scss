@@ -1,9 +1,8 @@
 .program {
-  @include container($mobile-container);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 25px 0 25px 65px;
+  padding: 25px 20px 25px 0;
   box-sizing: border-box;
   border: none;
 }
@@ -11,6 +10,32 @@
 .program__meaning {
   @include fonts(16px, 18px);
   color: #222222;
+  padding-left: 60px;
+  position: relative;
+}
+
+.program__control-mark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+}
+
+.program__control:checked + .program__control-mark::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  background: #68b738;
+  border-radius: 50%;
 }
 
 .program__meaning:not(:first-child) {
@@ -22,7 +47,7 @@
     @include container($tablet-form-container);
     border: 1px solid #e7e7e7;
     margin: 25px auto;
-    padding: 33px 0 33px 88px;
+    padding: 33px 0 33px 28px;
   }
 
   .program__meaning {

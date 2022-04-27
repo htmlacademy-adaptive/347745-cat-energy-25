@@ -3,9 +3,7 @@
 }
 
 .selection__title-wrapper {
-  @include container($mobile-container);
-  padding-top: 25px;
-  padding-bottom: 40px;
+  padding: 25px 20px 40px 20px;
 }
 
 .selection__title {
@@ -32,15 +30,14 @@
 }
 
 .selection__button {
+  @include button;
   border: none;
 }
 
 .selection__button-wrapper {
-  @include container($mobile-container);
   display: flex;
   flex-direction: column;
-  padding-top: 21px;
-  padding-bottom: 35px;
+  padding: 21px 20px 35px 20px;
 }
 
 .selection__necessarily {
