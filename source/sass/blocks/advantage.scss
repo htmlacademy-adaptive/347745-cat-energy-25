@@ -17,19 +17,39 @@
 .advantage__item {
   margin-bottom: 20px;
   padding-left: 80px;
+  position: relative;
+}
+
+.advantage--leaf-icon::before {
+  @include background(25px, 28px);
+  background-image: url("/img/leaf.svg");
+}
+
+.advantage--boil-icon::before {
+  @include background(29px, 31px);
+  background-image: url("/img/boilin.svg");
+}
+
+.advantage--nutrition-icon::before {
+  @include background(25px, 30px);
+  background-image: url("/img/eat.svg");
+}
+
+.advantage--scales-icon::before {
+  @include background(25px, 30px);
+  background-image: url("/img/scales.svg");
 }
 
 @media (min-width: $tablet-width) {
   .advantage {
-    @include container($tablet-container);
-    padding-right: 90px;
-    box-sizing: border-box;
+    padding: 0 30px;
   }
 
   .advantage__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 37px 140px;
+    counter-reset: advantege;
   }
 
   .advantage__item {
@@ -37,6 +57,17 @@
     padding-top: 151px;
     padding-bottom: 57px;
     padding-left: 0;
+    counter-increment: advantege;
+
+    &::after {
+      @include fonts(280px, 280px);
+      content: counter(advantege);
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: #f2f2f2;
+      z-index: -1;
+    }
   }
 
   .advantage__text {

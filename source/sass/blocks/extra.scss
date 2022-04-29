@@ -45,7 +45,7 @@
   height: 30px;
 }
 
-.extra-control:checked + .extra__control-mark::before {
+.extra__control:checked + .extra__control-mark::before {
   content: "";
   background-image: url("/img/checkbox.svg");
   background-repeat: no-repeat;

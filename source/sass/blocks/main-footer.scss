@@ -72,3 +72,9 @@
     margin-left: 25px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-footer__cotainer {
+    padding: 58px 110px 58px 110px;
+  }
+}
