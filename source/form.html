@@ -12,21 +12,35 @@
       <div class="main-header__wrapper">
         <div class="main-header__wrapper-inner">
           <a class="main-header__logo" href="index.html">
-            <img
-              class="main-header__img"
-              src="img/index/logo/logo-mobile.svg"
-              alt="Счастливый котик"
-              width="34"
-              height="38"
-            />
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="img/logo/logo-desktop.svg"
+                width="200"
+                height="59"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/logo/logo-tablet.svg"
+                width="134"
+                height="52"
+              />
+              <img
+                class="main-header__img"
+                src="img/logo/logo-mobile.svg"
+                alt="Счастливый котик"
+                width="34"
+                height="38"
+              />
+            </picture>
           </a>
           <a
             class="main-header__logo main-header__logo--center"
             href="index.html"
           >
             <img
-              class="main-header__img"
-              src="img/index/logo/logo2.svg"
+              class="main-header__img main-header__img--hidden"
+              src="img/logo/logo2.svg"
               alt="логотип кат энерджи"
               width="101"
               height="18"
@@ -42,9 +56,7 @@
               <a class="main-nav__link"> Главная </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                каталог продукции
-              </a>
+              <a class="main-nav__link" href="#"> каталог продукции </a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link main-nav--current" href="#">
@@ -165,7 +177,11 @@
             </div>
             <div class="extra__wrapper">
               <label class="extra__meaning">
-                <input class="visually-hidden extra__control" type="checkbox" checked />
+                <input
+                  class="visually-hidden extra__control"
+                  type="checkbox"
+                  checked
+                />
                 <span class="extra__control-mark"></span>
                 <span class="extra__text">сахарозаменитель</span>
               </label>
@@ -205,13 +221,22 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Наш магазин на карте</h2>
-        <img
-          class="map__image"
-          src="img/index/map/location.jpg"
-          alt="карта города с указанием локации"
-          width="320"
-          height="362"
-        />
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="img/map/map-desctop.jpg 1x, img/map/map-desctop@2x.jpg 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="img/map/map-tablet.jpg 1x, img/map/map-tablet@2x.jpg 2x"
+          />
+          <img
+            class="map__image"
+            src="img/map/map-mobile.jpg"
+            srcset="img/map/map-mobile@2x.jpg"
+            alt="карта города с указанием локации"
+          />
+        </picture>
       </section>
     </main>
     <footer class="main-footer">
@@ -219,7 +244,7 @@
         <a href="index.html">
           <img
             class="main-footer__image"
-            src="img/index/logo/logo2.svg"
+            src="img/logo/logo2.svg"
             alt="Логотип Кат энерджи"
             width="128"
             height="24"

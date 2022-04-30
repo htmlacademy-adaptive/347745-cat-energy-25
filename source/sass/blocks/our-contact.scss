@@ -39,6 +39,7 @@
 @media (min-width: $desktop-width) {
   .our-contact {
     position: absolute;
+    z-index: 1;
     width: 565px;
   }
 

@@ -108,46 +108,29 @@
 }
 
 @media (min-width: $desktop-width) {
-  .additional {
-    &::before {
-      content: "";
-      border: 2px solid #68b738;
-      width: 85px;
-      position: absolute;
-      top: 17px;
-      left: 0;
-    }
-
-    &::after {
-      content: "";
-      border: 2px solid #68b738;
-      width: 960px;
-      position: absolute;
-      top: 17px;
-      right: 0;
-    }
+  .additional__title-wrapper {
+    padding-left: 80px;
   }
 
   .additional__title {
-    width: 400px;
-    padding: 0;
+    padding: 0 30px;
   }
 
   .additional__wrapper {
-    @include container($detsktop-container);
+    padding: 0 110px;
     margin-bottom: 86px;
     display: flex;
   }
 
   .additional__list {
-    width: 100%;
+    flex-grow: 1;
     border-top: 1px solid #cdcdcd;
   }
 
   .additional__item {
     border: none;
     border-bottom: 1px solid #cdcdcd;
-    padding: 17px 0;
+    padding: 15px 0;
     display: flex;
   }
 
@@ -156,6 +139,7 @@
   }
 
   .additional__items {
+    margin: 0;
     margin-right: 40px;
   }
 
