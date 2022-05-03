@@ -1,10 +1,5 @@
 .map__image {
   display: block;
   margin: 0 auto;
-}
-
-@media (min-width: $desktop-width) {
-  .map {
-    position: relative;
-  }
+  width: 100%;
 }
