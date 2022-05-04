@@ -11,21 +11,35 @@
       <div class="main-header__wrapper">
         <div class="main-header__wrapper-inner">
           <a class="main-header__logo" href="index.html">
-            <img
-              class="main-header__img"
-              src="img/index/logo/logo-mobile.svg"
-              alt="Счастливый котик"
-              width="34"
-              height="38"
-            />
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="img/logo/logo-desktop.svg"
+                width="200"
+                height="59"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/logo/logo-tablet.svg"
+                width="134"
+                height="52"
+              />
+              <img
+                class="main-header__img"
+                src="img/logo/logo-mobile.svg"
+                alt="Счастливый котик"
+                width="34"
+                height="38"
+              />
+            </picture>
           </a>
           <a
             class="main-header__logo main-header__logo--center"
             href="index.html"
           >
             <img
-              class="main-header__img"
-              src="img/index/logo/logo2.svg"
+              class="main-header__img main-header__img--hidden"
+              src="img/logo/logo2.svg"
               alt="логотип кат энерджи"
               width="101"
               height="18"
@@ -38,7 +52,9 @@
         <nav class="main-header__nav main-nav main-nav--hidden main-nav--nojs">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--color main-nav--current-index">
+              <a
+                class="main-nav__link main-nav__link--color main-nav--current-index"
+              >
                 Главная
               </a>
             </li>
@@ -64,13 +80,31 @@
           <a class="program-selection__link site-button" href="#"
             >подобрать программу</a
           >
-          <img
-            class="program-selection__image"
-            src="img/index/index-cat.png"
-            alt="зеленая упаковка с кошачей едой"
-            width="280"
-            height="270"
-          />
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="img/index-can.png 1x, img/index-can@2x.png 2x"
+              width="552"
+              height="500"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                img/index-can-tablet.png    1x,
+                img/index-can-tablet@2x.png 2x
+              "
+              width="709"
+              height="609"
+            />
+            <img
+              class="program-selection__image"
+              src="img/index-can-mobile.png"
+              srcset="img/index-can-mobile@2x.png 2x"
+              alt="зеленая упаковка с кошачей едой"
+              width="280"
+              height="270"
+            />
+          </picture>
         </div>
       </section>
     </header>
@@ -161,16 +195,19 @@
           </div>
         </div>
         <div class="example__image-wrapper">
-          <img
-            class="example__image"
-            src="img/index/example/cat-fat.png"
-            alt="толстый котик"
-            width="280"
-            height="232"
-          />
+          <picture>
+            <img
+              class="example__image"
+              src="img/example/cat-fat.png"
+              srcset="img/example/cat-fat@2x.png 2x"
+              alt="толстый котик"
+              width="280"
+              height="232"
+            />
+          </picture>
           <!-- <img
             class="example__image"
-            src="img/index/example/cat-skinny.png"
+            src="img/example/cat-skinny.png"
             alt="худой котик"
             width="280"
             height="232"
@@ -195,13 +232,22 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Наш магазин на карте</h2>
-        <img
-          class="map__image"
-          src="img/index/map/location.jpg"
-          alt="карта города с указанием локации"
-          width="320"
-          height="362"
-        />
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="img/map/map-desctop.jpg 1x, img/map/map-desctop@2x.jpg 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="img/map/map-tablet.jpg 1x, img/map/map-tablet@2x.jpg 2x"
+          />
+          <img
+            class="map__image"
+            src="img/map/map-mobile.jpg"
+            srcset="img/map/map-mobile@2x.jpg"
+            alt="карта города с указанием локации"
+          />
+        </picture>
       </section>
     </main>
     <footer class="main-footer">
@@ -209,7 +255,7 @@
         <a href="index.html">
           <img
             class="main-footer__image"
-            src="img/index/logo/logo2.svg"
+            src="img/logo/logo2.svg"
             alt="Логотип Кат энерджи"
             width="128"
             height="24"

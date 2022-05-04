@@ -11,21 +11,35 @@
       <div class="main-header__wrapper">
         <div class="main-header__wrapper-inner">
           <a class="main-header__logo" href="index.html">
-            <img
-              class="main-header__img"
-              src="img/index/logo/logo-mobile.svg"
-              alt="Счастливый котик"
-              width="34"
-              height="38"
-            />
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="img/logo/logo-desktop.svg"
+                width="200"
+                height="59"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/logo/logo-tablet.svg"
+                width="134"
+                height="52"
+              />
+              <img
+                class="main-header__img"
+                src="img/logo/logo-mobile.svg"
+                alt="Счастливый котик"
+                width="34"
+                height="38"
+              />
+            </picture>
           </a>
           <a
             class="main-header__logo main-header__logo--center"
             href="index.html"
           >
             <img
-              class="main-header__img"
-              src="img/index/logo/logo2.svg"
+              class="main-header__img main-header__img--hidden"
+              src="img/logo/logo2.svg"
               alt="логотип кат энерджи"
               width="101"
               height="18"
@@ -38,7 +52,7 @@
         <nav class="main-header__nav main-nav main-nav--hidden main-nav--nojs">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link "> Главная </a>
+              <a class="main-nav__link"> Главная </a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link main-nav--current" href="#">
@@ -46,9 +60,7 @@
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                подбор программы
-              </a>
+              <a class="main-nav__link" href="#"> подбор программы </a>
             </li>
           </ul>
         </nav>
@@ -61,13 +73,34 @@
           <li class="product__item product-card">
             <a class="product-card__link" href="#">
               <div class="product-card__img-wrapper">
-                <img
-                  class="product-card__img"
-                  src="img/catalog/product-cards/catalog-pro500.png"
-                  alt=""
-                  width="68"
-                  height="86"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/product-cards/catalog-1.png    1x,
+                      img/product-cards/catalog-1@2x.png 2x
+                    "
+                    width="161"
+                    height="172"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/product-cards/catalog-1.png    1x,
+                      img/product-cards/catalog-1@2x.png 2x
+                    "
+                    width="161"
+                    height="172"
+                  />
+                  <img
+                    class="product-card__img"
+                    src="img/product-cards/catalog-1.png"
+                    srcset="img/product-cards/catalog-1@2x.png 2x"
+                    alt=""
+                    width="68"
+                    height="86"
+                  />
+                </picture>
               </div>
               <div class="product-card__wrapper">
                 <h2 class="product-card__title">Cat Energy PRO 500 г</h2>
@@ -92,12 +125,34 @@
           <li class="product__item product-card">
             <a class="product-card__link" href="#">
               <div class="product-card__img-wrapper">
-                <img
-                  src="img/catalog/product-cards/catalog-pro1000.png"
-                  alt=""
-                  width="84"
-                  height="101"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/product-cards/catalog-2.png    1x,
+                      img/product-cards/catalog-2@2x.png 2x
+                    "
+                    width="168"
+                    height="206"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/product-cards/catalog-2.png    1x,
+                      img/product-cards/catalog-2@2x.png 2x
+                    "
+                    width="168"
+                    height="206"
+                  />
+                  <img
+                    class="product-card__img"
+                    src="img/product-cards/catalog-2.png"
+                    srcset="img/product-cards/catalog-2@2x.png 2x"
+                    alt=""
+                    width="84"
+                    height="100"
+                  />
+                </picture>
               </div>
               <div class="product-card__wrapper">
                 <h2 class="product-card__title">Cat Energy PRO 1000 г</h2>
@@ -122,12 +177,34 @@
           <li class="product__item product-card">
             <a class="product-card__link" href="#">
               <div class="product-card__img-wrapper">
-                <img
-                  src="img/catalog/product-cards/catalog-pro500-fish.png"
-                  alt=""
-                  width="68"
-                  height="78"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/product-cards/catalog-3.png    1x,
+                      img/product-cards/catalog-3@2x.png 2x
+                    "
+                    width="163"
+                    height="174"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/product-cards/catalog-3.png    1x,
+                      img/product-cards/catalog-3@2x.png 2x
+                    "
+                    width="163"
+                    height="174"
+                  />
+                  <img
+                    class="product-card__img"
+                    src="img/product-cards/catalog-3.png"
+                    srcset="img/product-cards/catalog-3@2x.png 2x"
+                    alt=""
+                    width="68"
+                    height="78"
+                  />
+                </picture>
               </div>
               <div class="product-card__wrapper">
                 <h2 class="product-card__title">Cat Energy PRO 500 г</h2>
@@ -152,12 +229,34 @@
           <li class="product__item product-card">
             <a class="product-card__link" href="#">
               <div class="product-card__img-wrapper">
-                <img
-                  src="img/catalog/product-cards/catalog-pro1000-fish.png"
-                  alt=""
-                  width="84"
-                  height="101"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/product-cards/catalog-4.png    1x,
+                      img/product-cards/catalog-4@2x.png 2x
+                    "
+                    width="168"
+                    height="200"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/product-cards/catalog-4.png    1x,
+                      img/product-cards/catalog-4@2x.png 2x
+                    "
+                    width="168"
+                    height="200"
+                  />
+                  <img
+                    class="product-card__img"
+                    src="img/product-cards/catalog-4.png"
+                    srcset="img/product-cards/catalog-4@2x.png 2x"
+                    alt=""
+                    width="84"
+                    height="100"
+                  />
+                </picture>
               </div>
               <div class="product-card__wrapper">
                 <h2 class="product-card__title">Cat Energy PRO 1000 г</h2>
@@ -182,12 +281,34 @@
           <li class="product__item product-card">
             <a class="product-card__link" href="#">
               <div class="product-card__img-wrapper">
-                <img
-                  src="img/catalog/product-cards/catalog-slim500.png"
-                  alt=""
-                  width="68"
-                  height="78"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/product-cards/catalog-5.png    1x,
+                      img/product-cards/catalog-5@2x.png 2x
+                    "
+                    width="161"
+                    height="171"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/product-cards/catalog-5.png    1x,
+                      img/product-cards/catalog-5@2x.png 2x
+                    "
+                    width="161"
+                    height="171"
+                  />
+                  <img
+                    class="product-card__img"
+                    src="img/product-cards/catalog-5.png"
+                    srcset="img/product-cards/catalog-5@2x.png 2x"
+                    alt=""
+                    width="68"
+                    height="78"
+                  />
+                </picture>
               </div>
               <div class="product-card__wrapper">
                 <h2 class="product-card__title">Cat Energy slim 500 г</h2>
@@ -212,12 +333,34 @@
           <li class="product__item product-card">
             <a class="product-card__link" href="#">
               <div class="product-card__img-wrapper">
-                <img
-                  src="img/catalog/product-cards/catalog-slim1000.png"
-                  alt=""
-                  width="84"
-                  height="100"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/product-cards/catalog-6.png    1x,
+                      img/product-cards/catalog-6@2x.png 2x
+                    "
+                    width="168"
+                    height="200"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/product-cards/catalog-6.png    1x,
+                      img/product-cards/catalog-6@2x.png 2x
+                    "
+                    width="168"
+                    height="200"
+                  />
+                  <img
+                    class="product-card__img"
+                    src="img/product-cards/catalog-6.png"
+                    srcset="img/product-cards/catalog-6@2x.png 2x"
+                    alt=""
+                    width="84"
+                    height="100"
+                  />
+                </picture>
               </div>
               <div class="product-card__wrapper">
                 <h2 class="product-card__title">Cat Energy slim 1000 г</h2>
@@ -242,12 +385,34 @@
           <li class="product__item product-card">
             <a class="product-card__link" href="#">
               <div class="product-card__img-wrapper">
-                <img
-                  src="img/catalog/product-cards/catalog-rice.png"
-                  alt=""
-                  width="72"
-                  height="84"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/product-cards/catalog-7.png    1x,
+                      img/product-cards/catalog-7@2x.png 2x
+                    "
+                    width="163"
+                    height="174"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/product-cards/catalog-7.png    1x,
+                      img/product-cards/catalog-7@2x.png 2x
+                    "
+                    width="163"
+                    height="174"
+                  />
+                  <img
+                    class="product-card__img"
+                    src="img/product-cards/catalog-7.png"
+                    srcset="img/product-cards/catalog-7@2x.png 2x"
+                    alt=""
+                    width="72"
+                    height="84"
+                  />
+                </picture>
               </div>
               <div class="product-card__wrapper">
                 <h2 class="product-card__title">Cat Energy slim 500 г</h2>
@@ -344,12 +509,10 @@
           <section class="gift">
             <div class="gift__wrapper">
               <h2 class="visually-hidden">Наше предложение</h2>
-              <div class="gift__inner-wrapper">
-                <p class="gift__text">
-                  Закажите все<br />
-                  и получите чехол для кота в подарок!
-                </p>
-              </div>
+              <p class="gift__text">
+                Закажите все<br />
+                и получите чехол для кота в подарок!
+              </p>
             </div>
           </section>
         </div>
@@ -365,13 +528,22 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Наш магазин на карте</h2>
-        <img
-          class="map__image"
-          src="img/index/map/location.jpg"
-          alt="карта города с указанием локации"
-          width="320"
-          height="362"
-        />
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="img/map/map-desctop.jpg 1x, img/map/map-desctop@2x.jpg 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="img/map/map-tablet.jpg 1x, img/map/map-tablet@2x.jpg 2x"
+          />
+          <img
+            class="map__image"
+            src="img/map/map-mobile.jpg"
+            srcset="img/map/map-mobile@2x.jpg"
+            alt="карта города с указанием локации"
+          />
+        </picture>
       </section>
     </main>
     <footer class="main-footer back-color">
@@ -379,7 +551,7 @@
         <a href="index.html">
           <img
             class="main-footer__image"
-            src="img/index/logo/logo2.svg"
+            src="img/logo/logo2.svg"
             alt="Логотип Кат энерджи"
             width="128"
             height="24"

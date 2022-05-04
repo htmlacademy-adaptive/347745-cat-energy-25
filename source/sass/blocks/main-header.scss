@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding-left: 20px;
 }
 
@@ -58,6 +57,10 @@
     padding: 20px 0;
   }
 
+  .main-header__img--hidden {
+    display: none;
+  }
+
   .main-header__wrapper {
     padding: 0 30px;
     display: flex;
@@ -79,10 +82,21 @@
         rgba(104, 183, 56, 0.85),
         rgba(104, 183, 56, 0.85)
       ),
-      url("/img/index/index-background.jpg");
+      url("/img/index-background-desktop.jpg");
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 720px 694px;
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(
+          rgba(104, 183, 56, 0.85),
+          rgba(104, 183, 56, 0.85)
+        ),
+        url("/img/index-background-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-size: 720px 694px;
+    }
   }
 
   .main-header__wrapper {
