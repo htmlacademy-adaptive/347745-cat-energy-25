@@ -39,15 +39,15 @@
         <nav class="main-header__nav main-nav main-nav--hidden main-nav--nojs">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--color"> Главная </a>
+              <a class="main-nav__link"> Главная </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--color" href="#">
+              <a class="main-nav__link" href="#">
                 каталог продукции
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--color" href="#">
+              <a class="main-nav__link main-nav--current" href="#">
                 подбор программы
               </a>
             </li>
@@ -132,7 +132,7 @@
               <label class="contacts__meaning">
                 E-mail:*
                 <input
-                  class="contacts__input email"
+                  class="contacts__input contacts__email"
                   type="email"
                   placeholder="kuklachev@gmail.com"
                 />
@@ -140,7 +140,7 @@
               <label class="contacts__meaning">
                 Телефон:*
                 <input
-                  class="contacts__input phone"
+                  class="contacts__input contacts__phone"
                   type="tel"
                   placeholder="8 (960) 900-60-90"
                 />
@@ -165,22 +165,22 @@
             </div>
             <div class="extra__wrapper">
               <label class="extra__meaning">
-                <input class="visually-hidden extra-control" type="checkbox" checked />
+                <input class="visually-hidden extra__control" type="checkbox" checked />
                 <span class="extra__control-mark"></span>
                 <span class="extra__text">сахарозаменитель</span>
               </label>
               <label class="extra__meaning">
-                <input class="visually-hidden extra-control" type="checkbox" />
+                <input class="visually-hidden extra__control" type="checkbox" />
                 <span class="extra__control-mark"></span>
                 <span class="extra__text">питьевая вода</span>
               </label>
               <label class="extra__meaning">
-                <input class="visually-hidden extra-control" type="checkbox" />
+                <input class="visually-hidden extra__control" type="checkbox" />
                 <span class="extra__control-mark"></span>
                 <span class="extra__text">молоко</span>
               </label>
               <label class="extra__meaning">
-                <input class="visually-hidden extra-control" type="checkbox" />
+                <input class="visually-hidden extra__control" type="checkbox" />
                 <span class="extra__control-mark"></span>
                 <span class="extra__text">витамины</span>
               </label>
@@ -295,6 +295,6 @@
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

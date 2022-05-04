@@ -14,12 +14,47 @@
   margin-bottom: 25px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .programs__title {
   @include fonts(24px, 37px);
   color: #000000;
   margin: 0;
+  margin-top: 10px;
+  padding-left: 70px;
+}
+
+.programs--lost-weight-icon {
+  &::before {
+    content: "";
+    background-image: url("/img/cat_back.svg");
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(50%, 50%);
+  }
+}
+
+.programs--weight-gain-icon {
+  &::before {
+    content: "";
+    background-image: url("/img/cat_back2.svg");
+    background-repeat: no-repeat;
+    background-size: 67px 50px;
+    background-position: center;
+    width: 67px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(16%, 50%);
+  }
 }
 
 .programs__text {
@@ -47,14 +82,15 @@
     width: 24px;
     height: 12px;
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     left: 100px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .programs {
-    @include container($tablet-container);
+    padding: 0 30px;
   }
 
   .programs__item {
@@ -66,6 +102,31 @@
 
   .programs__title {
     @include fonts(36px, 36px);
+    padding: 0;
+  }
+
+  .programs--lost-weight-icon {
+    &::before {
+      content: "";
+      background-size: 200px 205px;
+      width: 200px;
+      height: 205px;
+      top: 50%;
+      left: 100%;
+      transform: translate(-120%, -50%);
+    }
+  }
+
+  .programs--weight-gain-icon {
+    &::before {
+      content: "";
+      background-size: 268px 200px;
+      width: 268px;
+      height: 200px;
+      top: 50%;
+      left: 100%;
+      transform: translate(-110%, -50%);
+    }
   }
 
   .programs__text {
@@ -80,7 +141,7 @@
 
 @media (min-width: $desktop-width) {
   .programs {
-    @include container($detsktop-container);
+    padding: 0 110px;
   }
 
   .programs__list {
@@ -89,13 +150,37 @@
   }
 
   .programs__item {
-    padding: 50px;
+    padding: 77px 52px 59px 52px;
     width: 570px;
     box-sizing: border-box;
   }
 
   .programs__title {
     padding-left: 165px;
+  }
+
+  .programs--lost-weight-icon {
+    &::before {
+      content: "";
+      background-size: 100px 105px;
+      width: 100px;
+      height: 105px;
+      top: 0;
+      left: 0;
+      transform: translate(50%, 50%);
+    }
+  }
+
+  .programs--weight-gain-icon {
+    &::before {
+      content: "";
+      background-size: 134px 100px;
+      width: 134px;
+      height: 100px;
+      top: 0;
+      left: 0;
+      transform: translate(16%, 50%);
+    }
   }
 
   .programs__text {
