@@ -105,7 +105,6 @@
     background-position: center;
     width: 30px;
     height: 12px;
-
   }
 
   &:active {
@@ -131,6 +130,8 @@
   }
 
   .programs__link {
+    @include fonts(20px, 30px);
+
     &::after {
       position: absolute;
       top: 50%;
@@ -166,10 +167,6 @@
   .programs__text {
     border-bottom: none;
     color: #000000;
-  }
-
-  .programs__link {
-    @include fonts(20px, 30px);
   }
 }
 
