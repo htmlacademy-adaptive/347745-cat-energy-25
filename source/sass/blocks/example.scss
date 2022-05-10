@@ -46,6 +46,10 @@
   margin: 0 auto;
 }
 
+.example--hidden {
+  display: none;
+}
+
 .example__number {
   @include fonts(24px, 24px);
   text-align: center;

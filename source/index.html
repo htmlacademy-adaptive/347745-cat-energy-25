@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="css/style.min.css"/>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="preload" href="css/style.min.css" as="style" />
+    <link rel="preload" href="js/script.js" as="script" />
+    <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous"/>
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
@@ -21,7 +25,7 @@
               <source
                 media="(min-width: 768px)"
                 srcset="img/logo/logo-tablet.svg"
-                width="134"
+                width="174"
                 height="52"
               />
               <img
@@ -59,7 +63,10 @@
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--color" href="catalog.html">
+              <a
+                class="main-nav__link main-nav__link--color"
+                href="catalog.html"
+              >
                 каталог продукции
               </a>
             </li>
@@ -77,8 +84,8 @@
             Функциональное питание для котов
           </h1>
           <p class="program-selection__text">Занялся собой? Займись котом!</p>
-          <a class="program-selection__link site-button" href="#"
-            >подобрать программу</a
+          <a class="program-selection__link" href="#"
+            ><span class="program-selection__link-text">подобрать программу</span></a
           >
           <picture>
             <source
@@ -221,6 +228,36 @@
         </div>
         <div class="example__image-wrapper">
           <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1440px)"
+              srcset="
+                img/example/cat-fat.webp    1x,
+                img/example/cat-fat@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="
+                img/example/cat-fat.webp    1x,
+                img/example/cat-fat@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              src="img/example/cat-fat.webp"
+              srcset="img/example/cat-fat@2x.webp 2x"
+              alt="зеленая упаковка с кошачей едой"
+            />
+            <source
+              media="(min-width: 1440px)"
+              srcset="img/example/cat-fat.jpg 1x, img/example/cat-fat@2x.jpg 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="img/example/cat-fat.jpg 1x, img/example/cat-fat@2x.jpg 2x"
+            />
             <img
               class="example__image"
               src="img/example/cat-fat.png"
@@ -231,7 +268,7 @@
             />
           </picture>
           <!-- <img
-            class="example__image"
+            class="example__image example--hidden"
             src="img/example/cat-skinny.png"
             alt="худой котик"
             width="280"
@@ -259,6 +296,24 @@
         <h2 class="visually-hidden">Наш магазин на карте</h2>
         <picture>
           <source
+            type="image/webp"
+            media="(min-width: 1440px)"
+            srcset="img/map/map-desctop.webp 1x, img/map/map-desctop@2x.webp 2x"
+          />
+          <source
+            type="image/webp"
+            media="(min-width: 768px)"
+            srcset="img/map/map-tablet.webp 1x, img/map/map-tablet@2x.webp 2x"
+          />
+          <source
+            type="image/webp"
+            src="img/map/map-mobile.webp"
+            srcset="img/map/map-mobile@2x.webp 2x"
+            alt="зеленая упаковка с кошачей едой"
+            width="280"
+            height="270"
+          />
+          <source
             media="(min-width: 1440px)"
             srcset="img/map/map-desctop.jpg 1x, img/map/map-desctop@2x.jpg 2x"
           />
@@ -271,13 +326,15 @@
             src="img/map/map-mobile.jpg"
             srcset="img/map/map-mobile@2x.jpg"
             alt="карта города с указанием локации"
+            width="320"
+            height="362"
           />
         </picture>
       </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__cotainer">
-        <a href="index.html">
+        <a class="main-footer__link-logo" href="index.html">
           <img
             class="main-footer__image"
             src="img/logo/logo2.svg"
@@ -293,11 +350,11 @@
               <svg class="main-footer__icon"
                 width="27"
                 height="17"
-                fill="none"
+                
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 27 17"
               >
-                <use href="./img/sprite.svg#vk"></use>
+                <use href="img/sprite.svg#vk"></use>
               </svg>
             </a>
           </li>
@@ -311,7 +368,7 @@
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 19"
               >
-                <use href="./img/sprite.svg#youtube"></use>
+                <use href="img/sprite.svg#youtube"></use>
               </svg>
             </a>
           </li>
@@ -325,7 +382,7 @@
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 18"
               >
-                <use href="./img/sprite.svg#telegram"></use>
+                <use href="img/sprite.svg#telegram"></use>
               </svg>
             </a>
           </li>
@@ -333,14 +390,8 @@
         <div class="main-footer__wrapper">
           <a class="main-footer__link" href="#">HTML Academy</a>
           <a class="main-footer__icon" href="#">
-            <svg
-              width="27"
-              height="34"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 27 34"
-            >
-              <use href="./img/sprite.svg#academy"></use>
+            <svg width="27" height="34" fill="none" viewBox="0 0 27 34">
+              <use href="img/sprite.svg#academy"></use>
             </svg>
           </a>
         </div>

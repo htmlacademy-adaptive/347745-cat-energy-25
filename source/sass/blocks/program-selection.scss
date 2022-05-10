@@ -44,6 +44,10 @@
   width: 100%;
   margin-bottom: 20px;
   order: 1;
+
+  &:active .program-selection__link-text {
+    opacity: 0.6;
+  }
 }
 
 .program-selection__text {

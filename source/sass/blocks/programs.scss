@@ -10,7 +10,7 @@
 
 .programs__item {
   @include back-color;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   margin-bottom: 25px;
   display: flex;
   flex-direction: column;
@@ -69,7 +69,7 @@
   color: #000000;
   text-decoration: none;
   display: block;
-  margin-top: 20px;
+  padding: 20px 40px 20px 0;
   align-self: start;
   position: relative;
 
@@ -85,6 +85,31 @@
     top: 50%;
     transform: translateY(-50%);
     left: 100px;
+  }
+
+  &:hover::after {
+    content: "";
+    background-image: url("/img/programs-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-size: 30px 12px;
+    background-position: center;
+    width: 30px;
+    height: 12px;
+  }
+
+  &:active::after {
+    content: "";
+    background-image: url("/img/programs-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-size: 30px 12px;
+    background-position: center;
+    width: 30px;
+    height: 12px;
+
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -103,6 +128,15 @@
   .programs__title {
     @include fonts(36px, 36px);
     padding: 0;
+  }
+
+  .programs__link {
+    &::after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 115px;
+    }
   }
 
   .programs--lost-weight-icon {

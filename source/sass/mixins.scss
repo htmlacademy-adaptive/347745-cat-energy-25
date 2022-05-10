@@ -12,15 +12,6 @@
   margin: 0 auto;
 }
 
-@mixin margin {
-  margin-left: calc((6.93% - 27px) * 1.5);
-}
-
-@mixin padding {
-  padding-right: 22px;
-  padding-left: 10%;
-}
-
 @mixin button {
   @include fonts(14px, 18px);
   background: #68b738;
@@ -31,6 +22,14 @@
   display: block;
   text-decoration: none;
   box-sizing: border-box;
+
+  &:hover {
+    background: #5eaa2f;
+  }
+
+  &:active {
+    background: #5eaa2f;
+  }
 
   @media (min-width: $tablet-width) {
     @include fonts(20px, 20px);
