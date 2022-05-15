@@ -11,11 +11,6 @@
   border-top: 1px solid #ebebeb;
 }
 
-.product__item {
-  padding: 20px 20px 0 20px;
-  border-bottom: 1px solid #ebebeb;
-}
-
 @media (min-width: $tablet-width) {
   .product {
     padding: 0 30px;
@@ -26,16 +21,12 @@
   }
 
   .product__list {
+    padding-top: 140px;
     border-top: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 60px;
+    grid-gap: 140px 60px;
     padding-bottom: 10px;
-  }
-
-  .product__item {
-    padding: 0 36px 40px 36px;
-    border-bottom: none;
   }
 }
 
@@ -46,6 +37,6 @@
 
   .product__list {
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 63px 80px;
+    grid-gap: 143px 80px;
   }
 }

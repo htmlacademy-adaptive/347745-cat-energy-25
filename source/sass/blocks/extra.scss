@@ -33,6 +33,20 @@
   &:not(:last-child) {
     margin-bottom: 25px;
   }
+
+  &:hover .extra__control-mark {
+    border: 1px solid #bababa;
+  }
+}
+
+.extra__control {
+  &:focus + .extra__control-mark {
+    outline: 2px solid #444444;
+  }
+}
+
+.extra__meaning--disablet {
+  opacity: 0.3;
 }
 
 .extra__control-mark {
@@ -66,10 +80,11 @@
 
   .extra__title {
     padding: 0 40px;
+    margin-left: 30px;
   }
 
   .extra__wrapper {
-    @include container($tablet-form-container);
+    padding: 0 71px;
     display: grid;
     grid-template-columns: repeat(2, 221px);
     gap: 32px 123px;
@@ -87,23 +102,12 @@
 
 @media (min-width: $desktop-width) {
   .extra__wrapper {
-    @include container($detsktop-container);
-    display: flex;
-    flex-direction: row;
-    gap: 0;
+    grid-template-columns: repeat(4, 1fr);
     margin: 50px auto;
-    padding: 0;
+    padding: 0 110px;
   }
 
   .extra__title {
-    margin-left: 53px;
-  }
-
-  .extra__meaning {
-    width: 220px;
-
-    &:not(:last-child) {
-      margin-right: 104px;
-    }
+    margin-left: 67px;
   }
 }

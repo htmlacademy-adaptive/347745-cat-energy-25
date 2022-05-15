@@ -58,7 +58,9 @@
 
   .main-nav__list {
     position: static;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(50px, auto));
+    gap: 10px 36px;
     border: none;
     background: none;
   }
@@ -68,12 +70,9 @@
     border: none;
   }
 
-  .main-nav__item:not(:last-child) {
-    margin-right: 30px;
-  }
-
   .main-nav__link {
     @include fonts(18px, 24px);
+    padding: 7px 0;
   }
 
   .main-nav--current {

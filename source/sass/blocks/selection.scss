@@ -53,8 +53,7 @@
   }
 
   .selection__title-wrapper {
-    @include container($tablet-form-container);
-    padding: 25px 0 60px 0;
+    padding: 25px 71px 60px 71px;
   }
 
   .selection__text {
@@ -86,11 +85,11 @@
 
 @media (min-width: $desktop-width) {
   .selection__title-wrapper {
-    @include container($detsktop-container);
+    padding: 73px 110px 63px 110px;
   }
 
   .selection__list {
-    @include container($detsktop-container);
+    padding: 0 110px;
     display: flex;
     justify-content: space-between;
   }

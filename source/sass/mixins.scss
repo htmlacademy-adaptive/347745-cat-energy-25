@@ -17,8 +17,8 @@
   background: #68b738;
   color: #ffffff;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   display: block;
   text-decoration: none;
   box-sizing: border-box;
@@ -33,8 +33,8 @@
 
   @media (min-width: $tablet-width) {
     @include fonts(20px, 20px);
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 

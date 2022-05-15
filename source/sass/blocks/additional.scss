@@ -51,6 +51,10 @@
 .additional__button {
   @include button;
   width: 100%;
+
+  &:active .additional__button-text {
+    opacity: 0.6;
+  }
 }
 
 .additional__criterion {
@@ -123,6 +127,9 @@
   }
 
   .additional__list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     flex-grow: 1;
     border-top: 1px solid #cdcdcd;
   }

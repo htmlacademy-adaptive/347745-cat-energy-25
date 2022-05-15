@@ -1,6 +1,10 @@
 .example {
   background: #eaeaea;
-  padding: 25px 20px 40px 20px;
+  padding: 25px 0 47px 0;
+}
+
+.example__container-inner {
+  padding: 0 20px;
 }
 
 .example__title {
@@ -9,7 +13,7 @@
 
 .example__text {
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .example__wrapper {
@@ -28,9 +32,9 @@
 
 .example__items {
   background: #eaeaea;
-  width: 87px;
   margin: 0 auto;
-  margin-top: 15px;
+  width: 87px;
+  margin-top: 13px;
 }
 
 .example__outlay {
@@ -44,9 +48,10 @@
 .example__image {
   display: block;
   margin: 0 auto;
+  margin-top: -8px;
 }
 
-.example--hidden {
+.example__image--hidden {
   display: none;
 }
 
@@ -70,9 +75,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 210px;
+  width: 202px;
   margin: 0 auto;
-  margin-top: 15px;
+  margin-top: 18px;
+
+  &:hover .example__toggle {
+    box-shadow: 0 2px 4px #00000030;
+  }
+
+  &:hover .example__condition {
+    border-bottom: 1px solid #00000066;
+  }
+
+  &:active .example__toggle {
+    border: 1px solid #68b738;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active .example__condition {
+    border: none;
+  }
 }
 
 .example__condition {
@@ -86,6 +108,7 @@
   border: 1px solid #cdcdcd;
   border-radius: 6px;
   position: relative;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -102,9 +125,14 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    background: linear-gradient(to bottom, #ffffff 50%, #eaeaea 50%);
-    padding: 45px 30px 62px 30px;
+    background: linear-gradient(to bottom, #ffffff 57%, #eaeaea 48%);
+    padding: 34px 0 62px 0;
     border-top: 1px solid #e6e6e6;
+    position: relative;
+  }
+
+  .example__container-inner {
+    padding: 0 30px;
   }
 
   .example__text {
@@ -115,13 +143,47 @@
   .example__outer-wrap {
     display: flex;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 53px;
   }
 
   .example__outlay {
     @include fonts(20px, 20px);
     margin: 0;
+    margin-top: 11px;
     margin-left: auto;
+    align-self: flex-start;
+  }
+
+  .example__image--hidden {
+    display: block;
+  }
+
+  .example__image-wrapper {
+    display: flex;
+    width: 592px;
+    margin: 0 auto;
+  }
+
+  .example__image-wrapper-skinny {
+    overflow: hidden;
+    width: 296px;
+  }
+
+  .example__image-wrapper-fat {
+    overflow: hidden;
+    width: 296px;
+  }
+
+  .example__image-skinny {
+    position: relative;
+    left: -267px;
+    top: 5px;
+  }
+
+  .example__image-fat {
+    position: relative;
+    left: 24px;
+    top: 3px;
   }
 
   .exemple__items-wrapper {
@@ -135,7 +197,7 @@
 
   .example__items {
     background: #ffffff;
-    width: 114px;
+    padding: 0 8px;
   }
 
   .example__number {
@@ -144,21 +206,34 @@
   }
 
   .example__description {
-    @include fonts(14px, 14px);
     font-size: 14px;
     line-height: 14px;
-    padding: 0 8px;
-    min-width: 114px;
-    max-width: 142px;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 14px;
+  }
+
+  .example__items--time-width {
+    min-width: 128px;
+  }
+
+  .example__items--weight-width {
+    min-width: 98px;
   }
 
   .example__text-separator {
     display: block;
     text-align: end;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 
   .example__toggle-wrapper {
-    width: 592px;
+    width: 570px;
+    margin-top: 34px;
   }
 
   .example__toggle-bar {
@@ -179,6 +254,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: 0 1px 3px #00000029;
 
     &::before {
       content: "";
@@ -192,6 +268,12 @@
       transform: translate(-50%, -50%);
     }
   }
+
+  .example__condition {
+    @include fonts(20px, 30px);
+    color: #000000;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -199,6 +281,7 @@
     background: linear-gradient(to bottom, #ffffff 26%, 20%, #eaeaea 50%);
     border-top: none;
     padding: 0 110px;
+    padding-bottom: 90px;
     display: flex;
     justify-content: space-between;
   }
@@ -215,6 +298,7 @@
   .example__outer-wrap {
     flex-direction: column;
     align-items: flex-start;
+    margin: 0;
   }
 
   .example__outlay {
@@ -222,6 +306,10 @@
     justify-content: space-between;
     margin: 0;
     font-size: 20px;
+  }
+
+  .example__image-wrapper {
+    margin: 0;
   }
 
   .example__items {

@@ -13,6 +13,11 @@
   color: #444444;
   display: flex;
   align-items: center;
+  box-sizing: border-box;
+
+  &:hover .data__input {
+    border: 1px solid #cdcdcd;
+  }
 }
 
 .data__input {
@@ -22,6 +27,15 @@
   margin-left: 13px;
   flex-grow: 1;
   padding: 13px 15px;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+}
+
+.data__input--error {
+  border: 2px solid #ff8282;
 }
 
 .data__meaning:not(:last-child) {
@@ -30,7 +44,7 @@
 
 @media (min-width: $tablet-width) {
   .data {
-    @include container($tablet-form-container);
+    padding: 0 71px;
     margin: 72px auto;
   }
 
@@ -50,6 +64,7 @@
 
 @media (min-width: $desktop-width) {
   .data {
+    padding: 0;
     width: 100%;
     height: 100%;
     margin: 0;

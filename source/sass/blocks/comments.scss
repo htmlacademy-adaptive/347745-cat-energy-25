@@ -30,6 +30,15 @@
   padding: 10px 12px;
   box-sizing: border-box;
   vertical-align: top;
+  resize: none;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -38,12 +47,13 @@
   }
 
   .comments__wrapper {
-    @include container($tablet-form-container);
+    padding: 0 71px;
     margin: 76px auto 65px auto;
   }
 
   .comments__title {
     padding: 0 40px;
+    margin-left: 30px;
   }
 
   .comments__input {
@@ -54,11 +64,11 @@
 
 @media (min-width: $desktop-width) {
   .comments__wrapper {
-    @include container($detsktop-container);
+    padding: 0 110px;
     margin: 76px auto 30px auto;
   }
 
   .comments__title {
-    margin-left: 53px;
+    margin-left: 67px;
   }
 }

@@ -16,6 +16,11 @@
   }
 }
 
+.main-header__logo--center {
+  padding-left: 12px;
+  padding-top: 2px;
+}
+
 .main-header__toggle {
   position: relative;
   width: 66px;
@@ -60,7 +65,7 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
-    padding: 20px 0;
+    padding-top: 23px;
   }
 
   .main-header__img--hidden {
@@ -71,6 +76,10 @@
     padding: 0 30px;
     display: flex;
     align-items: center;
+  }
+
+  .main-header__wrapper-inner {
+    padding: 0;
   }
 
   .main-header__toggle {

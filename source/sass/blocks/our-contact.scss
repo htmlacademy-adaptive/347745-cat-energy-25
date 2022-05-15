@@ -2,10 +2,14 @@
   @include back-color;
 }
 
+.our-contact--color {
+  background-color: #ffffff;
+}
+
 .our-contact__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 25px 20px;
 }
 
 .our-contact__text {
@@ -13,20 +17,23 @@
   color: #111111;
   margin: 0;
   width: 140px;
-  margin-right: 10px;
+  margin-right: 3px;
 }
 
 .our-contact__adress {
   width: 140px;
   line-height: 20px;
+  font-style: normal;
 }
 
 @media (min-width: $tablet-width) {
   .our-contact__wrapper {
-    padding: 56px 70px 56px 70px;
+    padding: 56px 70px 62px 70px;
+    background: #ffffff;
   }
 
   .our-contact__text {
+    @include fonts(20px, 26px);
     width: 170px;
   }
 
@@ -34,17 +41,27 @@
     text-align: end;
     width: 160px;
   }
+
+  .our-contact__adress-indent {
+    display: block;
+    margin-top: 19px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .our-contact {
-    position: absolute;
-    z-index: 1;
-    width: 565px;
+    position: relative;
   }
 
   .our-contact__wrapper {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    z-index: 1;
+    width: 565px;
     padding: 60px 80px 56px 80px;
+    background: #ffffff;
+    box-sizing: border-box;
   }
 
   .our-contact__text {
