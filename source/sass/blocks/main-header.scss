@@ -99,8 +99,8 @@
       ),
       url("/img/index-background-desktop.jpg");
     background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 720px 694px;
+    background-position: right top -23px;
+    background-size: 720px 683px;
 
     @media (min-resolution: 2dppx) {
       background: linear-gradient(
@@ -109,8 +109,8 @@
         ),
         url("/img/index-background-desktop@2x.jpg");
       background-repeat: no-repeat;
-      background-position: right top;
-      background-size: 720px 694px;
+      background-position: right top -23px;
+      background-size: 720px 683px;
     }
   }
 

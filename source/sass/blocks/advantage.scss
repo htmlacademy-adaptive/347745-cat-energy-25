@@ -106,13 +106,42 @@
 
 @media (min-width: $desktop-width) {
   .advantage {
-    @include container($detsktop-container);
+    padding: 0 110px;
     box-sizing: border-box;
   }
 
   .advantage__list {
     display: grid;
     grid-template-columns: repeat(4, 240px);
-    grid-gap: 80px;
+    grid-gap: 10px 84px;
+    margin-bottom: 70px;
+  }
+
+  .advantage__item {
+    &::after {
+      @include fonts(280px, 280px);
+      content: counter(advantege);
+      position: absolute;
+      top: 0;
+      right: -37px;
+      color: #f2f2f2;
+      z-index: -1;
+    }
+
+    &:not(:first-child)::after {
+      @include fonts(280px, 280px);
+      content: counter(advantege);
+      position: absolute;
+      top: 0;
+      right: -74px;
+      color: #f2f2f2;
+      z-index: -1;
+    }
+  }
+
+  .advantage__text {
+    & br {
+      display: none;
+    }
   }
 }

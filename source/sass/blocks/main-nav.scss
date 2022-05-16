@@ -89,6 +89,10 @@
     color: #ffffff;
   }
 
+  .main-nav__link {
+    @include fonts(20px, 30px);
+  }
+
   .main-nav--current-index {
     border-bottom: 2px solid #ffffff;
   }

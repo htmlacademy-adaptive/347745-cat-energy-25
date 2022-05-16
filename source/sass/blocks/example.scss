@@ -278,16 +278,17 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background: linear-gradient(to bottom, #ffffff 26%, 20%, #eaeaea 50%);
+    background: linear-gradient(to bottom, #ffffff 22%, 20%, #eaeaea 50%);
     border-top: none;
     padding: 0 110px;
-    padding-bottom: 90px;
+    padding-bottom: 62px;
     display: flex;
     justify-content: space-between;
   }
 
   .example__container-inner {
     width: 436px;
+    padding: 0;
   }
 
   .example__text {
@@ -310,14 +311,25 @@
 
   .example__image-wrapper {
     margin: 0;
+    position: relative;
+    top: -44px;
+  }
+
+  .example__toggle-wrapper {
+    margin-top: -7px;
   }
 
   .example__items {
     background: #eaeaea;
+    margin-top: 18px;
+  }
+
+  .example__wrapper {
+    margin-bottom: 64px;
   }
 
   .example__text-separator {
-    margin-right: 47px;
+    margin-right: 65px;
   }
 
   .example__number {
@@ -328,5 +340,6 @@
   .example__description {
     font-size: 14px;
     line-height: 14px;
+    margin-top: 10px;
   }
 }
