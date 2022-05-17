@@ -13,7 +13,12 @@
 }
 
 @mixin button {
-  @include fonts(14px, 18px);
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
   background: #68b738;
   color: #ffffff;
   text-align: center;
@@ -29,12 +34,6 @@
 
   &:active {
     background: #5eaa2f;
-  }
-
-  @media (min-width: $tablet-width) {
-    @include fonts(20px, 20px);
-    padding-top: 16px;
-    padding-bottom: 16px;
   }
 }
 

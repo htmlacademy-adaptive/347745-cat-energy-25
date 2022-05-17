@@ -72,35 +72,36 @@
         <ul class="product__list">
           <li class="product__item product-card">
             <a class="product-card__link" href="#">
-              <picture>
-                <source
-                  media="(min-width: 1440px)"
-                  srcset="
-                    img/product-cards/catalog-1.png    1x,
-                    img/product-cards/catalog-1@2x.png 2x
-                  "
-                  width="161"
-                  height="172"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/product-cards/catalog-1.png    1x,
-                    img/product-cards/catalog-1@2x.png 2x
-                  "
-                  width="161"
-                  height="172"
-                />
-                <img
-                  class="product-card__img"
-                  src="img/product-cards/catalog-1.png"
-                  srcset="img/product-cards/catalog-1@2x.png 2x"
-                  alt=""
-                  width="68"
-                  height="86"
-                />
-              </picture>
-
+              <div class="product-card__img-wrapper">
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/product-cards/catalog-1.png    1x,
+                      img/product-cards/catalog-1@2x.png 2x
+                    "
+                    width="161"
+                    height="172"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/product-cards/catalog-1.png    1x,
+                      img/product-cards/catalog-1@2x.png 2x
+                    "
+                    width="161"
+                    height="172"
+                  />
+                  <img
+                    class="product-card__img"
+                    src="img/product-cards/catalog-1.png"
+                    srcset="img/product-cards/catalog-1@2x.png 2x"
+                    alt=""
+                    width="68"
+                    height="86"
+                  />
+                </picture>
+              </div>
               <div class="product-card__wrapper">
                 <h2 class="product-card__title">Cat Energy PRO 500 г</h2>
                 <table class="product-card__items">
@@ -536,10 +537,13 @@
           </section>
         </div>
       </section>
-      <section class="our-contact back-color">
-        <div class="our-contact__wrapper container">
+      <section class="our-contact">
+        <div class="our-contact__wrapper">
           <h2 class="visually-hidden">Наш адрес</h2>
-          <p class="our-contact__text">приглашаем к сотрудничеству дилеров!</p>
+          <p class="our-contact__text">
+            приглашаем<br />
+            к сотрудничеству дилеров!
+          </p>
           <address class="our-contact__adress">
             ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
           </address>
