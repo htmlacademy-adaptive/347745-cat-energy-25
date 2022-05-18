@@ -1,6 +1,6 @@
 .extra {
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 19px;
   border: none;
   position: relative;
 }
@@ -19,7 +19,7 @@
 
 .extra__wrapper {
   padding: 0 20px;
-  margin-top: 35px;
+  margin-top: 38px;
   display: flex;
   flex-direction: column;
 }
@@ -27,7 +27,7 @@
 .extra__meaning {
   @include fonts(16px, 18px);
   color: #000000;
-  padding-left: 60px;
+  padding-left: 45px;
   position: relative;
 
   &:not(:last-child) {
@@ -51,12 +51,12 @@
 
 .extra__control-mark {
   position: absolute;
-  top: 50%;
+  top: 59%;
   transform: translateY(-50%);
   left: 0;
   border: 1px solid #cdcdcd;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
 }
 
 .extra__control:checked + .extra__control-mark::before {
@@ -75,7 +75,13 @@
 
 @media (min-width: $tablet-width) {
   .extra {
-    margin: 30px auto;
+    margin: 0 auto;
+  }
+
+  .extra__title-wrapper {
+    &::before {
+      top: 21px;
+    }
   }
 
   .extra__title {
@@ -87,16 +93,28 @@
     padding: 0 71px;
     display: grid;
     grid-template-columns: repeat(2, 221px);
-    gap: 32px 123px;
-    margin: 50px auto;
+    gap: 43px 123px;
+    margin: 60px auto;
   }
 
   .extra__meaning {
     @include fonts(20px, 30px);
+    padding-left: 58px;
 
     &:not(:last-child) {
       margin-bottom: 0;
     }
+  }
+
+  .extra__control-mark {
+    width: 38px;
+    height: 38px;
+  }
+
+  .extra__control:checked + .extra__control-mark::before {
+    background-size: 23px 20px;
+    width: 24px;
+    height: 21px;
   }
 }
 

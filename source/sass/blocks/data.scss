@@ -18,6 +18,10 @@
   &:hover .data__input {
     border: 1px solid #cdcdcd;
   }
+
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
 }
 
 .data__input {
@@ -38,14 +42,10 @@
   border: 2px solid #ff8282;
 }
 
-.data__meaning:not(:last-child) {
-  margin-bottom: 14px;
-}
-
 @media (min-width: $tablet-width) {
   .data {
     padding: 0 71px;
-    margin: 72px auto;
+    margin: 2px auto;
   }
 
   .data__meaning {
@@ -53,12 +53,14 @@
     color: #444444;
 
     &:not(:last-child) {
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
   }
 
   .data__input {
     @include fonts(20px, 30px);
+    margin-left: 16px;
+    padding: 13px 20px;
   }
 }
 

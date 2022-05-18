@@ -217,3 +217,21 @@
     max-width: 220px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product-card__wrapper {
+    margin-top: 36px;
+  }
+
+  .product-card__title {
+    margin-left: 0;
+  }
+
+  .product-card__img {
+    bottom: 227px;
+  }
+
+  .product-card__items {
+    margin-bottom: 35px;
+  }
+}

@@ -80,6 +80,9 @@
 
   .program-selection__link {
     @include button;
+    font-size: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     width: 244px;
     margin: 0;
     order: 0;

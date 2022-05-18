@@ -3,7 +3,7 @@
 }
 
 .selection__title-wrapper {
-  padding: 25px 20px 40px 20px;
+  padding: 26px 20px 14px 20px;
 }
 
 .selection__title {
@@ -14,7 +14,7 @@
   @include fonts(14px, 18px);
   color: #000000;
   margin: 0;
-  margin-top: 35px;
+  margin-top: 38px;
   width: 226px;
 }
 
@@ -37,7 +37,7 @@
 .selection__button-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 21px 20px 35px 20px;
+  padding: 21px 20px 32px 20px;
 }
 
 .selection__necessarily {
@@ -53,12 +53,13 @@
   }
 
   .selection__title-wrapper {
-    padding: 25px 71px 60px 71px;
+    padding: 58px 71px 60px 71px;
   }
 
   .selection__text {
     @include fonts(20px, 30px);
     width: 323px;
+    margin-top: 54px;
   }
 
   .selection__item {
@@ -66,15 +67,17 @@
   }
 
   .selection__button-wrapper {
-    @include container($tablet-form-container);
+    padding: 0 71px 75px 71px;
     flex-direction: row;
     align-items: center;
-    padding-bottom: 75px;
   }
 
   .selection__button {
-    width: 230px;
+    font-size: 20px;
+    width: 282px;
     margin: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   .selection__necessarily {

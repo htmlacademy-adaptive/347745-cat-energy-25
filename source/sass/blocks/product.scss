@@ -36,8 +36,12 @@
     @include container($detsktop-container);
   }
 
+  .product__title {
+    padding-top: 64px;
+  }
+
   .product__list {
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 143px 80px;
+    grid-gap: 132px 80px;
   }
 }

@@ -129,6 +129,8 @@
 @media (min-width: $desktop-width) {
   .additional__title-wrapper {
     padding-left: 80px;
+    margin-top: 64px;
+    margin-bottom: 83px;
   }
 
   .additional__title {
@@ -146,14 +148,13 @@
     justify-content: space-between;
     flex-direction: column;
     flex-grow: 1;
-    border-top: 1px solid #cdcdcd;
   }
 
   .additional__item {
     border: none;
-    border-bottom: 1px solid #cdcdcd;
-    padding: 15px 0;
+    padding: 16px 0;
     display: flex;
+    align-items: center;
   }
 
   .additional__link {
@@ -162,10 +163,18 @@
 
   .additional__items {
     margin: 0;
-    margin-right: 40px;
+  }
+
+  .additional__criterion {
+    text-align: start;
+  }
+
+  .additional__meaning {
+    text-align: start;
+    width: 90px;
   }
 
   .additional__button {
-    width: 244px;
+    width: 329px;
   }
 }
