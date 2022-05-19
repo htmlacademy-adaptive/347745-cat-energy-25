@@ -121,8 +121,9 @@
 @media (min-width: $desktop-width) {
   .extra__wrapper {
     grid-template-columns: repeat(4, 1fr);
-    margin: 50px auto;
+    margin: 58px auto 70px;
     padding: 0 110px;
+    gap: 43px 85px;
   }
 
   .extra__title {

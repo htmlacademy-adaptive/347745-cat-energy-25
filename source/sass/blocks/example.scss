@@ -78,22 +78,18 @@
   width: 202px;
   margin: 0 auto;
   margin-top: 18px;
+  box-sizing: border-box;
 
   &:hover .example__toggle {
     box-shadow: 0 2px 4px #00000030;
   }
 
   &:hover .example__condition {
-    border-bottom: 1px solid #00000066;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.4);
   }
 
   &:active .example__toggle {
-    border: 1px solid #68b738;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-  }
-
-  &:active .example__condition {
-    border: none;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(104, 183, 56, 1);
   }
 }
 
@@ -234,6 +230,14 @@
   .example__toggle-wrapper {
     width: 570px;
     margin-top: 34px;
+
+    &:hover .example__condition {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    }
+
+    &:active .example__condition {
+      border-bottom: 1px dotted rgba(0, 0, 0, 0);
+    }
   }
 
   .example__toggle-bar {

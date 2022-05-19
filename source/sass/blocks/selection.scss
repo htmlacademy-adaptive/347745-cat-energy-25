@@ -88,7 +88,7 @@
 
 @media (min-width: $desktop-width) {
   .selection__title-wrapper {
-    padding: 73px 110px 63px 110px;
+    padding: 70px 110px 63px 110px;
   }
 
   .selection__list {
@@ -98,11 +98,12 @@
   }
 
   .selection__item {
-    width: 46%;
+    width: 47%;
   }
 
   .selection__button-wrapper {
-    @include container($detsktop-container);
+    padding: 0 110px;
+    margin-bottom: 82px;
   }
 
   .selection__button {

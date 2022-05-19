@@ -165,10 +165,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    margin-top: 65px;
+  }
+
   .contacts__wrapper {
     padding: 0 110px;
     flex-direction: row;
-    margin: 75px auto;
+    margin: 75px auto 65px;
   }
 
   .contacts__title {
