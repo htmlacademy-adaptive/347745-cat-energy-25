@@ -12,30 +12,28 @@
   margin: 0 auto;
 }
 
-@mixin margin {
-  margin-left: calc((6.93% - 27px) * 1.5);
-}
-
-@mixin padding {
-  padding-right: 22px;
-  padding-left: 10%;
-}
-
 @mixin button {
-  @include fonts(14px, 18px);
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
   background: #68b738;
   color: #ffffff;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   display: block;
   text-decoration: none;
   box-sizing: border-box;
 
-  @media (min-width: $tablet-width) {
-    @include fonts(20px, 20px);
-    padding-top: 13px;
-    padding-bottom: 13px;
+  &:hover {
+    background: #5eaa2f;
+  }
+
+  &:active {
+    background: #5eaa2f;
   }
 }
 

@@ -3,21 +3,25 @@
 }
 
 .advantage__title {
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 .advantage__list {
   margin: 0;
-  margin-bottom: 29px;
-  margin-top: 40px;
+  margin-bottom: 55px;
+  margin-top: 44px;
   padding: 0;
   list-style: none;
 }
 
 .advantage__item {
-  margin-bottom: 20px;
+  margin-bottom: 26px;
   padding-left: 80px;
   position: relative;
+}
+
+.advantage__text br {
+  display: none;
 }
 
 .advantage--leaf-icon::before {
@@ -45,16 +49,22 @@
     padding: 0 30px;
   }
 
+  .advantage__title {
+    margin: 44px 0 35px 0;
+  }
+
   .advantage__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 37px 140px;
+    grid-gap: 37px 57px;
     counter-reset: advantege;
+    margin: 0;
+    margin-bottom: 55px;
   }
 
   .advantage__item {
     margin-bottom: 0;
-    padding-top: 151px;
+    padding-top: 150px;
     padding-bottom: 57px;
     padding-left: 0;
     counter-increment: advantege;
@@ -64,26 +74,74 @@
       content: counter(advantege);
       position: absolute;
       top: 0;
-      right: 0;
+      right: 50px;
+      transform: translate(-50%);
+      color: #f2f2f2;
+      z-index: -1;
+    }
+
+    &:not(:first-child)::after {
+      @include fonts(280px, 280px);
+      content: counter(advantege);
+      position: absolute;
+      top: 0;
+      right: 10px;
+      transform: translate(-50%);
       color: #f2f2f2;
       z-index: -1;
     }
   }
 
   .advantage__text {
+    text-align: start;
     margin: 0;
+    min-width: 201px;
+    max-width: 245px;
+
+    & br {
+      display: block;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantage {
-    @include container($detsktop-container);
+    padding: 0 110px;
     box-sizing: border-box;
   }
 
   .advantage__list {
     display: grid;
     grid-template-columns: repeat(4, 240px);
-    grid-gap: 80px;
+    grid-gap: 10px 84px;
+    margin-bottom: 70px;
+  }
+
+  .advantage__item {
+    &::after {
+      @include fonts(280px, 280px);
+      content: counter(advantege);
+      position: absolute;
+      top: 0;
+      right: -37px;
+      color: #f2f2f2;
+      z-index: -1;
+    }
+
+    &:not(:first-child)::after {
+      @include fonts(280px, 280px);
+      content: counter(advantege);
+      position: absolute;
+      top: 0;
+      right: -74px;
+      color: #f2f2f2;
+      z-index: -1;
+    }
+  }
+
+  .advantage__text {
+    & br {
+      display: none;
+    }
   }
 }

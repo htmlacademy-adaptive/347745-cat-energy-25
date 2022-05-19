@@ -1,37 +1,38 @@
 .program-selection {
   background: linear-gradient(
-      rgba(104, 183, 56, 0.85),
-      rgba(104, 183, 56, 0.85)
+      rgba(104, 183, 56, 0.85) 61%,
+      rgba(253, 253, 253, 1) 40%
     ),
-    url("/img/index-background.jpg");
+    url("/img/index-background@2x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 320px 302px;
+  background-size: auto, contain;
   padding-top: 27px;
 
   @media (min-resolution: 2dppx) {
     background: linear-gradient(
-        rgba(104, 183, 56, 0.85),
-        rgba(104, 183, 56, 0.85)
+        rgba(104, 183, 56, 0.85) 61%,
+        rgba(253, 253, 253, 1) 40%
       ),
       url("/img/index-background@2x.jpg");
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 320px 302px;
+    background-size: auto, contain;
     padding-top: 27px;
   }
 }
 
 .program-selection__wrapper {
-  padding: 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 20px;
 }
 
 .program-selection__title {
   text-align: center;
   margin: 0;
+  width: 250px;
 }
 
 .program-selection__image {
@@ -43,7 +44,12 @@
   @include button;
   width: 100%;
   margin-bottom: 20px;
+  margin-top: 2px;
   order: 1;
+
+  &:active .program-selection__link-text {
+    opacity: 0.6;
+  }
 }
 
 .program-selection__text {
@@ -52,16 +58,18 @@
   color: #ffffff;
   margin-top: 25px;
   margin-bottom: 30px;
+  max-width: 200px;
 }
 
 @media (min-width: $tablet-width) {
   .program-selection {
     background: none;
+    padding-top: 56px;
   }
 
   .program-selection__wrapper {
     background: none;
-    padding-left: 90px;
+    padding-left: 118px;
     align-items: flex-start;
   }
 
@@ -72,6 +80,9 @@
 
   .program-selection__link {
     @include button;
+    font-size: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     width: 244px;
     margin: 0;
     order: 0;
@@ -83,12 +94,37 @@
     text-align: start;
     margin-top: 41px;
     margin-bottom: 50px;
+    max-width: 300px;
+  }
+
+  .program-selection__image {
+    position: relative;
+    top: -78px;
+    left: -90px;
+    z-index: -1;
   }
 }
 
 @media (min-width: $desktop-width) {
   .program-selection {
-    padding: 110px;
-    padding-top: 27px;
+    padding: 27px 110px 184px 110px;
+    margin-bottom: 162px;
+  }
+
+  .program-selection__title {
+    margin-top: 77px;
+  }
+
+  .program-selection__wrapper {
+    position: relative;
+    padding-left: 77px;
+  }
+
+  .program-selection__image {
+    position: absolute;
+    top: -8px;
+    left: 59%;
+    transform: translate(-50%);
+    z-index: 2;
   }
 }

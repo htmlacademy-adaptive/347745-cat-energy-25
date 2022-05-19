@@ -17,7 +17,7 @@
 
 .comments__wrapper {
   box-sizing: border-box;
-  margin: 22px 0;
+  margin: 37px 0 24px 0;
   padding: 0 20px;
 }
 
@@ -27,39 +27,55 @@
   border: 1px solid #e7e7e7;
   width: 100%;
   min-height: 150px;
-  padding: 10px 12px;
+  padding: 9px 12px;
   box-sizing: border-box;
   vertical-align: top;
+  resize: none;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .comments {
-    margin: 0 auto 65px auto;
+    margin: 0 auto;
   }
 
   .comments__wrapper {
-    @include container($tablet-form-container);
+    padding: 0 71px;
     margin: 76px auto 65px auto;
   }
 
+  .comments__title-wrapper {
+    &::before {
+      top: 22px;
+    }
+  }
+
   .comments__title {
-    @include margin;
     padding: 0 40px;
+    margin-left: 30px;
   }
 
   .comments__input {
     @include fonts(20px, 30px);
     min-height: 174px;
+    padding: 9px 17px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .comments__wrapper {
-    @include container($detsktop-container);
-    margin: 76px auto 30px auto;
+    padding: 0 110px;
+    margin: 76px auto 68px auto;
   }
 
   .comments__title {
-    margin-left: 53px;
+    margin-left: 67px;
   }
 }
