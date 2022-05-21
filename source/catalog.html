@@ -3,7 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="preload" href="css/style.min.css" as="style" />
     <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="preload"
+      href="fonts/oswaldmedium.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/oswaldregular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
@@ -15,14 +30,10 @@
               <source
                 media="(min-width: 1440px)"
                 srcset="img/logo/logo-desktop.svg"
-                width="200"
-                height="59"
               />
               <source
                 media="(min-width: 768px)"
                 srcset="img/logo/logo-tablet.svg"
-                width="174"
-                height="52"
               />
               <img
                 class="main-header__img"
@@ -74,14 +85,25 @@
             <a class="product-card__link" href="#">
               <div class="product-card__img-wrapper">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="
+                    img/product-cards/catalog-1.webp    1x,
+                    img/product-cards/catalog-1@2x.webp 2x
+                  ">
+                  <source type="image/webp" media="(min-width: 768px)"
+                  srcset="
+                    img/product-cards/catalog-1.webp 1x,
+                    img/product-cards/catalog-1@2x.webp 2x
+                  ">
+                  <source type="image/webp" src="img/product-cards/catalog-1.webp"
+                  srcset="img/product-cards/catalog-1@2x.webp 2x">
                   <source
                     media="(min-width: 1440px)"
                     srcset="
                       img/product-cards/catalog-1.png    1x,
                       img/product-cards/catalog-1@2x.png 2x
                     "
-                    width="161"
-                    height="172"
+
                   />
                   <source
                     media="(min-width: 768px)"
@@ -128,6 +150,18 @@
             <a class="product-card__link" href="#">
               <div class="product-card__img-wrapper">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="
+                    img/product-cards/catalog-2.webp    1x,
+                    img/product-cards/catalog-2@2x.webp 2x
+                  ">
+                  <source type="image/webp" media="(min-width: 768px)"
+                  srcset="
+                    img/product-cards/catalog-2.webp    1x,
+                    img/product-cards/catalog-2@2x.webp 2x
+                  ">
+                  <source type="image/webp" src="img/product-cards/catalog-2.webp"
+                  srcset="img/product-cards/catalog-1@2x.webp 2x">
                   <source
                     media="(min-width: 1440px)"
                     srcset="
@@ -182,6 +216,18 @@
             <a class="product-card__link" href="#">
               <div class="product-card__img-wrapper">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="
+                    img/product-cards/catalog-3.webp    1x,
+                    img/product-cards/catalog-3@2x.webp 2x
+                  ">
+                  <source type="image/webp" media="(min-width: 768px)"
+                  srcset="
+                    img/product-cards/catalog-3.webp    1x,
+                    img/product-cards/catalog-3@2x.webp 2x
+                  ">
+                  <source type="image/webp" src="img/product-cards/catalog-1.webp"
+                  srcset="img/product-cards/catalog-3@2x.webp 2x">
                   <source
                     media="(min-width: 1440px)"
                     srcset="
@@ -236,6 +282,18 @@
             <a class="product-card__link" href="#">
               <div class="product-card__img-wrapper">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="
+                    img/product-cards/catalog-4.webp    1x,
+                    img/product-cards/catalog-4@2x.webp 2x
+                  ">
+                  <source type="image/webp" media="(min-width: 768px)"
+                  srcset="
+                    img/product-cards/catalog-4.webp    1x,
+                    img/product-cards/catalog-4@2x.webp 2x
+                  ">
+                  <source type="image/webp" src="img/product-cards/catalog-4.webp"
+                  srcset="img/product-cards/catalog-4@2x.webp 2x">
                   <source
                     media="(min-width: 1440px)"
                     srcset="
@@ -290,6 +348,18 @@
             <a class="product-card__link" href="#">
               <div class="product-card__img-wrapper">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="
+                    img/product-cards/catalog-5.webp    1x,
+                    img/product-cards/catalog-5@2x.webp 2x
+                  ">
+                  <source type="image/webp" media="(min-width: 768px)"
+                  srcset="
+                    img/product-cards/catalog-5.webp    1x,
+                    img/product-cards/catalog-5@2x.webp 2x
+                  ">
+                  <source type="image/webp" src="img/product-cards/catalog-1.webp"
+                  srcset="img/product-cards/catalog-5@2x.webp 2x">
                   <source
                     media="(min-width: 1440px)"
                     srcset="
@@ -344,6 +414,18 @@
             <a class="product-card__link" href="#">
               <div class="product-card__img-wrapper">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="
+                    img/product-cards/catalog-6.webp    1x,
+                    img/product-cards/catalog-6@2x.webp 2x
+                  ">
+                  <source type="image/webp" media="(min-width: 768px)"
+                  srcset="
+                    img/product-cards/catalog-6.webp    1x,
+                    img/product-cards/catalog-6@2x.webp 2x
+                  ">
+                  <source type="image/webp" src="img/product-cards/catalog-6.webp"
+                  srcset="img/product-cards/catalog-1@2x.webp 2x">
                   <source
                     media="(min-width: 1440px)"
                     srcset="
@@ -398,6 +480,18 @@
             <a class="product-card__link" href="#">
               <div class="product-card__img-wrapper">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="
+                    img/product-cards/catalog-7.webp    1x,
+                    img/product-cards/catalog-7@2x.webp 2x
+                  ">
+                  <source type="image/webp" media="(min-width: 768px)"
+                  srcset="
+                    img/product-cards/catalog-7.webp    1x,
+                    img/product-cards/catalog-7@2x.webp 2x
+                  ">
+                  <source type="image/webp" src="img/product-cards/catalog-7.webp"
+                  srcset="img/product-cards/catalog-1@2x.webp 2x">
                   <source
                     media="(min-width: 1440px)"
                     srcset="
@@ -449,15 +543,15 @@
             >
           </li>
           <li class="product__item product-card product-card--extra">
-            <a class="product-card__link product-card--extra-link" href="#">
-              <h2 class="product-card__title product-card--title">
+            <a class="product-card__link product-card__link--extra" href="#">
+              <h2 class="product-card__title product-card__title--extra">
                 Показать еще 100500 товаров
               </h2>
               <span class="product-card__text"
                 >На самом деле вкусов гораздо больше!</span
               >
             </a>
-            <a class="product-card__button product-card--color" href="#"
+            <a class="product-card__button product-card__button--color" href="#"
               ><span class="product-card__button-text">показать все</span></a
             >
           </li>
@@ -545,13 +639,33 @@
             к сотрудничеству дилеров!
           </p>
           <address class="our-contact__adress">
-            ул. Большая Конюшенная, д. 19/8 <span class="our-contact__adress-indent">Санкт-Петербург</span>
+            ул. Большая Конюшенная, д. 19/8
+            <span class="our-contact__adress-indent">Санкт-Петербург</span>
           </address>
         </div>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Наш магазин на карте</h2>
         <picture>
+          <source
+              type="image/webp"
+              media="(min-width: 1440px)"
+              srcset="
+                img/map/map-desctop.webp    1x,
+                img/map/map-desctop@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="img/map/map-tablet.webp 1x, img/map/map-tablet@2x.webp 2x"
+            />
+            <source
+              type="image/webp"
+              src="img/map/map-mobile.webp"
+              srcset="img/map/map-mobile@2x.webp 2x"
+              alt="зеленая упаковка с кошачей едой"
+            />
           <source
             media="(min-width: 1440px)"
             srcset="img/map/map-desctop.jpg 1x, img/map/map-desctop@2x.jpg 2x"

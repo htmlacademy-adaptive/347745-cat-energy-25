@@ -32,6 +32,7 @@
 .selection__button {
   @include button;
   border: none;
+  cursor: pointer;
 }
 
 .selection__button-wrapper {

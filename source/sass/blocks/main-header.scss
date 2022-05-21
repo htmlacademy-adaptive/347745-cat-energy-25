@@ -72,6 +72,11 @@
     padding-top: 23px;
   }
 
+  .main-header__img {
+    width: 174px;
+    height: 52px;
+  }
+
   .main-header__img--hidden {
     display: none;
   }
@@ -121,5 +126,10 @@
   .main-header__wrapper {
     @include container($detsktop-container);
     padding: 0 110px;
+  }
+
+  .main-header__img {
+    width: 200px;
+    height: 59px;
   }
 }

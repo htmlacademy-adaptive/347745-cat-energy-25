@@ -2,7 +2,22 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preload" href="css/style.min.css" as="style" />
     <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="preload"
+      href="fonts/oswaldmedium.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/oswaldregular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Форма</title>
@@ -16,14 +31,10 @@
               <source
                 media="(min-width: 1440px)"
                 srcset="img/logo/logo-desktop.svg"
-                width="200"
-                height="59"
               />
               <source
                 media="(min-width: 768px)"
                 srcset="img/logo/logo-tablet.svg"
-                width="174"
-                height="52"
               />
               <img
                 class="main-header__img"
@@ -143,10 +154,10 @@
               </legend>
             </div>
             <div class="contacts__wrapper">
-              <label class="contacts__meaning contacts__email">
+              <label class="contacts__meaning">
                 E-mail:*
                 <input
-                  class="contacts__input"
+                  class="contacts__input contacts__email"
                   type="email"
                   placeholder="kuklachev@gmail.com"
                 />
@@ -228,6 +239,25 @@
       <section class="map">
         <h2 class="visually-hidden">Наш магазин на карте</h2>
         <picture>
+          <source
+              type="image/webp"
+              media="(min-width: 1440px)"
+              srcset="
+                img/map/map-desctop.webp    1x,
+                img/map/map-desctop@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="img/map/map-tablet.webp 1x, img/map/map-tablet@2x.webp 2x"
+            />
+            <source
+              type="image/webp"
+              src="img/map/map-mobile.webp"
+              srcset="img/map/map-mobile@2x.webp 2x"
+              alt="зеленая упаковка с кошачей едой"
+            />
           <source
             media="(min-width: 1440px)"
             srcset="img/map/map-desctop.jpg 1x, img/map/map-desctop@2x.jpg 2x"

@@ -57,6 +57,7 @@
   border: 1px solid #cdcdcd;
   width: 28px;
   height: 28px;
+  cursor: pointer;
 }
 
 .extra__control:checked + .extra__control-mark::before {
