@@ -1,9 +1,8 @@
 .program {
-  @include container($mobile-container);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 25px 0 25px 65px;
+  padding: 26px 20px 25px 20px;
   box-sizing: border-box;
   border: none;
 }
@@ -11,30 +10,88 @@
 .program__meaning {
   @include fonts(16px, 18px);
   color: #222222;
+  padding-left: 45px;
+  position: relative;
+
+  &:not(:first-child) {
+    margin-top: 25px;
+  }
+
+  &:hover .program__control-mark {
+    border: 1px solid #bababa;
+  }
 }
 
-.program__meaning:not(:first-child) {
-  margin-top: 23px;
+.program__meaning--disabled {
+  opacity: 0.3;
+}
+
+.program__control-mark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+}
+
+.program__control:checked + .program__control-mark::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  background: #68b738;
+  border-radius: 50%;
+}
+
+.program__control {
+  &:focus + .program__control-mark {
+    outline: 2px solid #444444;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .program {
-    @include container($tablet-form-container);
     border: 1px solid #e7e7e7;
-    margin: 25px auto;
-    padding: 33px 0 33px 88px;
+    margin: 68px 71px;
+    padding: 28px 27px;
   }
 
   .program__meaning {
     @include fonts(20px, 30px);
+    padding-left: 59px;
+
+    &:not(:first-child) {
+      margin-top: 24px;
+    }
+  }
+
+  .program__control-mark {
+    width: 39px;
+    height: 39px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .program {
-    @include container($detsktop-container);
     width: 100%;
     height: 100%;
     margin: 0;
+    padding: 31px 27px;
+  }
+
+  .program__meaning {
+    padding-left: 64px;
+  }
+
+  .program__control:checked + .program__control-mark::before {
+    width: 18px;
+    height: 18px;
   }
 }

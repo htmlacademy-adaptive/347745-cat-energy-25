@@ -12,11 +12,81 @@
   margin: 0 auto;
 }
 
-@mixin margin {
-  margin-left: calc((6.93% - 27px) * 1.5);
+@mixin button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background: #68b738;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  display: block;
+  text-decoration: none;
+  box-sizing: border-box;
+
+  &:hover {
+    background: #5eaa2f;
+  }
+
+  &:active {
+    background: #5eaa2f;
+  }
 }
 
-@mixin padding {
-  padding-right: 22px;
-  padding-left: 10%;
+@mixin back-color {
+  background: #f2f2f2;
+}
+
+@mixin caption {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@mixin decoreation-line {
+  &::before {
+    content: "";
+    height: 2px;
+    background: #68b738;
+    position: absolute;
+    top: 16px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+@mixin background($backwidth, $backheight) {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: $backwidth $backheight;
+  background-position: center;
+  background-color: #68b738;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 37px;
+    transform: translateY(0);
+    left: 0;
+  }
 }

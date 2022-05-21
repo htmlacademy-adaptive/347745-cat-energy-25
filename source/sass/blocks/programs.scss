@@ -1,5 +1,5 @@
 .programs {
-  @include container($mobile-container);
+  padding: 0 20px;
 }
 
 .programs__list {
@@ -9,21 +9,60 @@
 }
 
 .programs__item {
-  padding: 20px;
-  margin-bottom: 25px;
+  @include back-color;
+  padding: 20px 20px 0 20px;
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 21px;
+  }
 }
 
 .programs__title {
   @include fonts(24px, 37px);
   color: #000000;
   margin: 0;
+  margin-top: 10px;
+  padding-left: 70px;
+}
+
+.programs--lost-weight-icon {
+  &::before {
+    content: "";
+    background-image: url("/img/cat_back.svg");
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    transform: translate(50%, 50%);
+  }
+}
+
+.programs--weight-gain-icon {
+  &::before {
+    content: "";
+    background-image: url("/img/cat_back2.svg");
+    background-repeat: no-repeat;
+    background-size: 67px 50px;
+    background-position: center;
+    width: 67px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(16%, 50%);
+  }
 }
 
 .programs__text {
   margin: 0;
-  padding: 25px 0;
+  padding: 29px 0 22px 0;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -33,39 +72,120 @@
   color: #000000;
   text-decoration: none;
   display: block;
-  margin-top: 20px;
+  padding: 20px 40px 20px 0;
   align-self: start;
+  position: relative;
+  min-width: 121px;
+  box-sizing: border-box;
+
+  &::after {
+    content: "";
+    background-image: url("/img/programs-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 12px;
+    background-position: center;
+    width: 24px;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+
+  &:hover::after {
+    content: "";
+    background-image: url("/img/programs-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-size: 30px 12px;
+    background-position: center;
+    width: 30px;
+    height: 12px;
+  }
+
+  &:active::after {
+    content: "";
+    background-image: url("/img/programs-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-size: 30px 12px;
+    background-position: center;
+    width: 30px;
+    height: 12px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .programs {
-    @include container($tablet-container);
+    padding: 0 30px;
+    margin-top: -80px;
   }
 
   .programs__item {
-    padding: 77px 316px 57px 52px;
+    padding: 67px 316px 40px 52px;
     margin-bottom: 25px;
     display: flex;
     flex-direction: column;
+
+    &:not(:last-child) {
+      margin-bottom: 27px;
+    }
   }
 
   .programs__title {
     @include fonts(36px, 36px);
+    padding: 0;
+  }
+
+  .programs__link {
+    @include fonts(20px, 30px);
+    min-width: 151px;
+    padding-right: 50px;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+    }
+  }
+
+  .programs--lost-weight-icon {
+    &::before {
+      content: "";
+      background-size: 200px 205px;
+      width: 200px;
+      height: 205px;
+      top: 49%;
+      left: 97%;
+      transform: translate(-120%, -50%);
+    }
+  }
+
+  .programs--weight-gain-icon {
+    &::before {
+      content: "";
+      background-size: 268px 200px;
+      width: 268px;
+      height: 200px;
+      top: 51%;
+      left: 100%;
+      transform: translate(-110%, -50%);
+    }
   }
 
   .programs__text {
     border-bottom: none;
     color: #000000;
-  }
-
-  .programs__link {
-    @include fonts(20px, 30px);
+    padding: 24px 0 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .programs {
-    @include container($detsktop-container);
+    padding: 0 110px;
   }
 
   .programs__list {
@@ -74,17 +194,42 @@
   }
 
   .programs__item {
-    padding: 50px;
+    padding: 77px 52px 40px 52px;
     width: 570px;
     box-sizing: border-box;
   }
 
   .programs__title {
-    padding-left: 165px;
+    padding-left: 159px;
+    margin-top: 2px;
+  }
+
+  .programs--lost-weight-icon {
+    &::before {
+      content: "";
+      background-size: 100px 105px;
+      width: 100px;
+      height: 105px;
+      top: -8px;
+      left: 0;
+      transform: translate(50%, 50%);
+    }
+  }
+
+  .programs--weight-gain-icon {
+    &::before {
+      content: "";
+      background-size: 134px 100px;
+      width: 134px;
+      height: 100px;
+      top: -3px;
+      left: 10px;
+      transform: translate(16%, 50%);
+    }
   }
 
   .programs__text {
-    padding-top: 73px;
+    padding: 73px 0 6px 0;
     color: #000000;
   }
 

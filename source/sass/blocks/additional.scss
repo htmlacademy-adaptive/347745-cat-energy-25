@@ -1,18 +1,23 @@
 .additional {
   position: relative;
+}
 
-  &::before {
-    content: "";
-    border: 2px solid #68b738;
-    width: 90%;
-    position: absolute;
-    top: 14px;
-    left: 10%;
-  }
+.additional__title-wrapper {
+  @include decoreation-line;
+  display: flex;
+  margin-top: 22px;
+  margin-bottom: 35px;
+}
+
+.additional__title {
+  @include caption;
+  background-color: #ffffff;
+  padding: 0 20px;
+  margin: 0;
 }
 
 .additional__wrapper {
-  @include container($mobile-container);
+  padding: 0 20px;
 }
 
 .additional__list {
@@ -24,15 +29,8 @@
 
 .additional__item {
   border-bottom: 1px solid #cdcdcd;
-  padding-top: 13px;
-  padding-bottom: 20px;
-}
-
-.additional__title {
-  background-color: #ffffff;
-  padding-right: 25px;
-  margin-top: 25px;
-  margin-bottom: 36px;
+  // padding-top: 13px;
+  // padding-bottom: 20px;
 }
 
 .additional__link {
@@ -42,16 +40,24 @@
 .additional__sub-title {
   @include fonts(16px, 16px);
   color: #222222;
-  margin: 13px 0;
+  margin: 13px 0 9px 0;
 }
 
 .additional__items {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  border-collapse: collapse;
   width: 100%;
 }
 
 .additional__button {
+  @include button;
+  @include fonts(16px, 20px);
   width: 100%;
+  margin-bottom: 17px;
+
+  &:active .additional__button-text {
+    opacity: 0.6;
+  }
 }
 
 .additional__criterion {
@@ -63,26 +69,28 @@
 }
 
 @media (min-width: $tablet-width) {
-  .additional {
+  .additional__title-wrapper {
+    margin-top: 53px;
+    margin-bottom: 80px;
+    padding-left: 31px;
+
     &::before {
-      content: "";
-      border: 2px solid #68b738;
-      width: 100%;
-      position: absolute;
-      top: 17px;
-      left: 0;
+      top: 23px;
     }
   }
 
   .additional__title {
-    position: relative;
-    width: 345px;
     background-color: #ffffff;
-    padding: 0 35px;
+    padding: 0 37px;
+  }
+
+  .additional__sub-title {
+    @include fonts(20px, 20px);
+    margin: 0;
   }
 
   .additional__wrapper {
-    @include container($tablet-container);
+    padding: 0 30px;
   }
 
   .additional__list {
@@ -91,7 +99,7 @@
 
   .additional__item {
     border: 1px solid #cdcdcd;
-    padding: 28px 38px;
+    padding: 27px 38px;
   }
 
   .additional__link {
@@ -100,7 +108,13 @@
   }
 
   .additional__items {
+    margin-bottom: 17px;
     width: 50%;
+  }
+
+  .additional__button {
+    @include button;
+    margin: 0;
   }
 
   .additional__criterion {
@@ -108,55 +122,39 @@
   }
 
   .additional__meaning {
-    width: 100px;
+    width: 90px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .additional {
-    &::before {
-      content: "";
-      border: 2px solid #68b738;
-      width: 85px;
-      position: absolute;
-      top: 17px;
-      left: 0;
-    }
-
-    &::after {
-      content: "";
-      border: 2px solid #68b738;
-      width: 960px;
-      position: absolute;
-      top: 17px;
-      right: 0;
-    }
+  .additional__title-wrapper {
+    padding-left: 80px;
+    margin-top: 64px;
+    margin-bottom: 83px;
   }
 
   .additional__title {
-    width: 400px;
-    padding: 0;
+    padding: 0 30px;
   }
 
   .additional__wrapper {
-    @include container($detsktop-container);
+    padding: 0 110px;
     margin-bottom: 86px;
-  }
-
-  .additional__wrapper-inner {
     display: flex;
   }
 
   .additional__list {
-    width: 100%;
-    border-top: 1px solid #cdcdcd;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-grow: 1;
   }
 
   .additional__item {
     border: none;
-    border-bottom: 1px solid #cdcdcd;
-    padding: 17px 0;
+    padding: 16px 0;
     display: flex;
+    align-items: center;
   }
 
   .additional__link {
@@ -164,10 +162,19 @@
   }
 
   .additional__items {
-    margin-right: 40px;
+    margin: 0;
+  }
+
+  .additional__criterion {
+    text-align: start;
+  }
+
+  .additional__meaning {
+    text-align: start;
+    width: 90px;
   }
 
   .additional__button {
-    width: 244px;
+    width: 329px;
   }
 }

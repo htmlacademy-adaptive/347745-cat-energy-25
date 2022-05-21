@@ -1,11 +1,10 @@
 .example {
   background: #eaeaea;
-  padding-top: 25px;
-  padding-bottom: 40px;
+  padding: 25px 0 47px 0;
 }
 
-.example__container {
-  @include container($mobile-container);
+.example__container-inner {
+  padding: 0 20px;
 }
 
 .example__title {
@@ -14,17 +13,28 @@
 
 .example__text {
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .example__wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 34px;
+}
+
+.exemple__items-wrapper {
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 124px;
+  height: 56px;
 }
 
 .example__items {
-  text-align: center;
-  padding: 15px 24px 0 24px;
+  background: #eaeaea;
+  margin: 0 auto;
+  width: 87px;
+  margin-top: 13px;
 }
 
 .example__outlay {
@@ -38,6 +48,11 @@
 .example__image {
   display: block;
   margin: 0 auto;
+  margin-top: -8px;
+}
+
+.example__image--hidden {
+  display: none;
 }
 
 .example__number {
@@ -50,20 +65,70 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  margin: 0;
+  width: 60px;
+  padding: 0 14px;
+  margin: 0 auto;
   margin-top: 8px;
+}
+
+.example__toggle-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 202px;
+  margin: 0 auto;
+  margin-top: 18px;
+  box-sizing: border-box;
+
+  &:hover .example__toggle {
+    box-shadow: 0 2px 4px #00000030;
+  }
+
+  &:hover .example__condition {
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.4);
+  }
+
+  &:active .example__toggle {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(104, 183, 56, 1);
+  }
+}
+
+.example__condition {
+  @include fonts(16px, 20px);
+  color: #000000;
+}
+
+.example__toggle {
+  width: 86px;
+  height: 14px;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 36px;
+    height: 6px;
+    background: #68b738;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    transform: translateY(-50%);
+  }
 }
 
 @media (min-width: $tablet-width) {
   .example {
-    background: linear-gradient(to bottom, #ffffff 50%, #eaeaea 50%);
-    padding-top: 25px;
-    padding-bottom: 40px;
+    background: linear-gradient(to bottom, #ffffff 57%, #eaeaea 48%);
+    padding: 34px 0 66px 0;
     border-top: 1px solid #e6e6e6;
+    position: relative;
   }
 
-  .example__container {
-    @include container($tablet-container);
+  .example__container-inner {
+    padding: 0 30px;
   }
 
   .example__text {
@@ -74,17 +139,61 @@
   .example__outer-wrap {
     display: flex;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 53px;
   }
 
   .example__outlay {
     @include fonts(20px, 20px);
     margin: 0;
+    margin-top: 11px;
     margin-left: auto;
+    align-self: flex-start;
+  }
+
+  .example__image--hidden {
+    display: block;
+  }
+
+  .example__image-wrapper {
+    display: flex;
+    width: 592px;
+    margin: 0 auto;
+  }
+
+  .example__image-wrapper-skinny {
+    overflow: hidden;
+    width: 296px;
+  }
+
+  .example__image-wrapper-fat {
+    overflow: hidden;
+    width: 296px;
+  }
+
+  .example__image-skinny {
+    position: relative;
+    left: -267px;
+    top: 5px;
+  }
+
+  .example__image-fat {
+    position: relative;
+    left: 24px;
+    top: 3px;
+  }
+
+  .exemple__items-wrapper {
+    width: 162px;
+    height: 72px;
+
+    &:not(:last-child) {
+      margin-right: 42px;
+    }
   }
 
   .example__items {
-    margin-right: 40px;
+    background: #ffffff;
+    padding: 0 8px;
   }
 
   .example__number {
@@ -93,32 +202,97 @@
   }
 
   .example__description {
-    @include fonts(14px, 14px);
     font-size: 14px;
     line-height: 14px;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 14px;
+  }
+
+  .example__items--time-width {
+    min-width: 128px;
+  }
+
+  .example__items--weight-width {
+    min-width: 98px;
   }
 
   .example__text-separator {
     display: block;
     text-align: end;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .example__toggle-wrapper {
+    width: 570px;
+    margin-top: 34px;
+
+    &:hover .example__condition {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    }
+
+    &:active .example__condition {
+      border-bottom: 1px dotted rgba(0, 0, 0, 0);
+    }
+  }
+
+  .example__toggle-bar {
+    width: 426px;
+    height: 6px;
+    background: #dcdcdc;
+    border-radius: 6px;
+    position: relative;
+  }
+
+  .example__toggle {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 1px 3px #00000029;
+
+    &::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: #68b738;
+      border-radius: 6px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .example__condition {
+    @include fonts(20px, 30px);
+    color: #000000;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
   }
 }
 
 @media (min-width: $desktop-width) {
   .example {
-    background: linear-gradient(to bottom, #ffffff 26%, 20%, #eaeaea 50%);
+    background: linear-gradient(to bottom, #ffffff 22%, 20%, #eaeaea 50%);
     border-top: none;
-    padding-bottom: 0;
-  }
-
-  .example__container {
-    @include container($detsktop-container);
+    padding: 0 110px;
+    padding-bottom: 66px;
     display: flex;
     justify-content: space-between;
   }
 
   .example__container-inner {
     width: 436px;
+    padding: 0;
   }
 
   .example__text {
@@ -129,6 +303,7 @@
   .example__outer-wrap {
     flex-direction: column;
     align-items: flex-start;
+    margin: 0;
   }
 
   .example__outlay {
@@ -138,8 +313,27 @@
     font-size: 20px;
   }
 
+  .example__image-wrapper {
+    margin: 0;
+    position: relative;
+    top: -44px;
+  }
+
+  .example__toggle-wrapper {
+    margin-top: -7px;
+  }
+
+  .example__items {
+    background: #eaeaea;
+    margin-top: 18px;
+  }
+
+  .example__wrapper {
+    margin-bottom: 64px;
+  }
+
   .example__text-separator {
-    margin-right: 47px;
+    margin-right: 65px;
   }
 
   .example__number {
@@ -150,5 +344,6 @@
   .example__description {
     font-size: 14px;
     line-height: 14px;
+    margin-top: 10px;
   }
 }
