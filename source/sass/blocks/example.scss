@@ -1,6 +1,12 @@
 .example {
   background: #eaeaea;
+}
+
+.example__outer-container {
   padding: 25px 0 47px 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .example__container-inner {
@@ -79,23 +85,12 @@
   margin: 0 auto;
   margin-top: 18px;
   box-sizing: border-box;
-
-  &:hover .example__toggle {
-    box-shadow: 0 2px 4px #00000030;
-  }
-
-  &:hover .example__condition {
-    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.4);
-  }
-
-  &:active .example__toggle {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(104, 183, 56, 1);
-  }
 }
 
 .example__condition {
   @include fonts(16px, 20px);
   color: #000000;
+  cursor: pointer;
 }
 
 .example__toggle {
@@ -117,11 +112,30 @@
     left: 6px;
     transform: translateY(-50%);
   }
+
+  &:hover {
+    box-shadow: 0 2px 4px #00000030;
+  }
+
+  &:active .example__toggle {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(104, 183, 56, 1);
+  }
+}
+
+.example__condition--was:hover {
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.4);
+}
+
+.example__condition--became:hover {
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.4);
 }
 
 @media (min-width: $tablet-width) {
   .example {
     background: linear-gradient(to bottom, #ffffff 57%, #eaeaea 48%);
+  }
+
+  .example__outer-container {
     padding: 34px 0 66px 0;
     border-top: 1px solid #e6e6e6;
     position: relative;
@@ -234,14 +248,6 @@
   .example__toggle-wrapper {
     width: 570px;
     margin-top: 34px;
-
-    &:hover .example__condition {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-    }
-
-    &:active .example__condition {
-      border-bottom: 1px dotted rgba(0, 0, 0, 0);
-    }
   }
 
   .example__toggle-bar {
@@ -275,6 +281,10 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
+
+    &:active {
+      outline: 1px solid #68b738;
+    }
   }
 
   .example__condition {
@@ -282,11 +292,22 @@
     color: #000000;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
   }
+
+  .example__condition--was:hover {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0);
+  }
+
+  .example__condition--became:hover {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0);
+  }
 }
 
 @media (min-width: $desktop-width) {
   .example {
     background: linear-gradient(to bottom, #ffffff 22%, 20%, #eaeaea 50%);
+  }
+
+  .example__outer-container {
     border-top: none;
     padding: 0 110px;
     padding-bottom: 66px;

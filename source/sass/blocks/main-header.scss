@@ -1,13 +1,14 @@
+.main-header {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .main-header__wrapper-inner {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 20px;
-}
-
-.main-header--line {
-  border-bottom: 1px solid #d9d9d9;
 }
 
 .main-header__logo {
@@ -124,7 +125,6 @@
   }
 
   .main-header__wrapper {
-    @include container($detsktop-container);
     padding: 0 110px;
   }
 

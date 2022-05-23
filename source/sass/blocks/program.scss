@@ -1,7 +1,7 @@
 .program {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: max-content;
+  gap: 25px;
   padding: 26px 20px 25px 20px;
   box-sizing: border-box;
   border: none;
@@ -10,12 +10,10 @@
 .program__meaning {
   @include fonts(16px, 18px);
   color: #222222;
+  width: auto;
   padding-left: 45px;
   position: relative;
-
-  &:not(:first-child) {
-    margin-top: 25px;
-  }
+  cursor: pointer;
 
   &:hover .program__control-mark {
     border: 1px solid #bababa;
@@ -36,7 +34,6 @@
   box-sizing: border-box;
   width: 30px;
   height: 30px;
-  cursor: pointer;
 }
 
 .program__control:checked + .program__control-mark::before {
@@ -62,15 +59,12 @@
     border: 1px solid #e7e7e7;
     margin: 68px 71px;
     padding: 28px 27px;
+    gap: 24px;
   }
 
   .program__meaning {
     @include fonts(20px, 30px);
     padding-left: 59px;
-
-    &:not(:first-child) {
-      margin-top: 24px;
-    }
   }
 
   .program__control-mark {
