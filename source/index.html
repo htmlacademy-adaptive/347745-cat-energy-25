@@ -3,9 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="css/style.min.css" />
     <link rel="preload" href="css/style.min.css" as="style" />
-    <link rel="preload" href="js/script.js" as="script" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <link
       rel="preload"
       href="fonts/oswaldmedium.woff2"
@@ -20,6 +19,7 @@
       as="font"
       crossorigin="anonymous"
     />
+
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
@@ -31,14 +31,10 @@
               <source
                 media="(min-width: 1440px)"
                 srcset="img/logo/logo-desktop.svg"
-                width="200"
-                height="59"
               />
               <source
                 media="(min-width: 768px)"
                 srcset="img/logo/logo-tablet.svg"
-                width="174"
-                height="52"
               />
               <img
                 class="main-header__img"
@@ -106,8 +102,6 @@
               type="image/webp"
               media="(min-width: 1440px)"
               srcset="img/index-can.webp 1x, img/index-can@2x.webp 2x"
-              width="552"
-              height="500"
             />
             <source
               type="image/webp"
@@ -116,22 +110,15 @@
                 img/index-can-tablet.webp    1x,
                 img/index-can-tablet@2x.webp 2x
               "
-              width="709"
-              height="609"
             />
             <source
               type="image/webp"
               src="img/index-can-mobile.webp"
               srcset="img/index-can-mobile@2x.webp 2x"
-              alt="зеленая упаковка с кошачей едой"
-              width="280"
-              height="270"
             />
             <source
               media="(min-width: 1440px)"
               srcset="img/index-can.png 1x, img/index-can@2x.png 2x"
-              width="552"
-              height="500"
             />
             <source
               media="(min-width: 768px)"
@@ -139,8 +126,6 @@
                 img/index-can-tablet.png    1x,
                 img/index-can-tablet@2x.png 2x
               "
-              width="709"
-              height="609"
             />
             <img
               class="program-selection__image"
@@ -154,7 +139,7 @@
         </div>
       </section>
     </header>
-    <main class="main-container">
+    <main>
       <section class="programs">
         <h2 class="visually-hidden">Программы</h2>
         <ul class="programs__list">
@@ -211,172 +196,160 @@
         </ul>
       </section>
       <section class="example">
-        <div class="example__container-inner">
-          <h2 class="example__title page-title">Живой пример</h2>
-          <p class="example__text">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-            Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-            этом он не менял своих привычек и по-прежнему спит по 16 часов в
-            день.
-          </p>
-          <div class="example__outer-wrap">
-            <div class="example__wrapper">
-              <div class="exemple__items-wrapper">
-                <dl class="example__items example__items--weight-width">
-                  <dt class="example__number">5 КГ</dt>
-                  <dd class="example__description">снижение веса</dd>
-                </dl>
-              </div>
-              <div class="exemple__items-wrapper">
-                <dl class="example__items example__items--time-width">
-                  <dt class="example__number">60 ДНЕЙ</dt>
-                  <dd class="example__description">затрачено времени</dd>
-                </dl>
-              </div>
-            </div>
-            <p class="example__outlay">
-              <span class="example__text-separator">Затраты на питание:</span>
-              <span class="example__text-separator"> 15 000 РУБ.</span>
+        <div class="example__outer-container">
+          <div class="example__container-inner">
+            <h2 class="example__title page-title">Живой пример</h2>
+            <p class="example__text">
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
+              на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
+              При этом он не менял своих привычек и по-прежнему спит по 16 часов
+              в день.
             </p>
-          </div>
-        </div>
-        <div class="example__container">
-          <div class="example__image-wrapper">
-            <div class="example__image-wrapper-fat">
-              <picture>
-                <source
-                  type="image/webp"
-                  media="(min-width: 1440px)"
-                  srcset="
-                    img/example/cat-fat.webp    1x,
-                    img/example/cat-fat@2x.webp 2x
-                  "
-                  width="592"
-                  height="511"
-                />
-                <source
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/example/cat-fat.webp    1x,
-                    img/example/cat-fat@2x.webp 2x
-                  "
-                  width="592"
-                  height="511"
-                />
-                <source
-                  type="image/webp"
-                  src="img/example/cat-fat.webp"
-                  srcset="img/example/cat-fat@2x.webp 2x"
-                  width="310"
-                  height="240"
-                />
-                <source
-                  media="(min-width: 1440px)"
-                  srcset="
-                    img/example/cat-fat.jpg    1x,
-                    img/example/cat-fat@2x.jpg 2x
-                  "
-                  width="592"
-                  height="511"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/example/cat-fat.jpg    1x,
-                    img/example/cat-fat@2x.jpg 2x
-                  "
-                  width="592"
-                  height="511"
-                />
-                <img
-                  class="example__image example__image-fat"
-                  src="img/example/cat-fat.png"
-                  srcset="img/example/cat-fat@2x.png 2x"
-                  alt="толстый котик"
-                  width="310"
-                  height="240"
-                />
-              </picture>
-            </div>
-            <div class="example__image-wrapper-skinny">
-              <picture>
-                <source
-                  type="image/webp"
-                  media="(min-width: 1440px)"
-                  srcset="
-                    img/example/cat-skinny.webp    1x,
-                    img/example/cat-skinny@2x.webp 2x
-                  "
-                  width="592"
-                  height="511"
-                />
-                <source
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/example/cat-skinny.webp    1x,
-                    img/example/cat-skinny@2x.webp 2x
-                  "
-                  width="592"
-                  height="511"
-                />
-                <source
-                  type="image/webp"
-                  src="img/example/cat-skinny.webp"
-                  srcset="img/example/cat-skinny@2x.webp 2x"
-                  width="280"
-                  height="232"
-                />
-                <source
-                  media="(min-width: 1440px)"
-                  srcset="
-                    img/example/cat-skinny.jpg    1x,
-                    img/example/cat-skinny@2x.jpg 2x
-                  "
-                  width="592"
-                  height="511"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/example/cat-skinny.jpg    1x,
-                    img/example/cat-skinny@2x.jpg 2x
-                  "
-                  width="592"
-                  height="511"
-                />
-                <img
-                  class="example__image example__image-skinny example__image--hidden"
-                  src="img/example/cat-skinny.png"
-                  srcset="img/example/cat-skinny@2x.png 2x"
-                  alt="худой котик"
-                  width="280"
-                  height="232"
-                />
-              </picture>
+            <div class="example__outer-wrap">
+              <div class="example__wrapper">
+                <div class="exemple__items-wrapper">
+                  <dl class="example__items example__items--weight-width">
+                    <dt class="example__number">5 КГ</dt>
+                    <dd class="example__description">снижение веса</dd>
+                  </dl>
+                </div>
+                <div class="exemple__items-wrapper">
+                  <dl class="example__items example__items--time-width">
+                    <dt class="example__number">60 ДНЕЙ</dt>
+                    <dd class="example__description">затрачено времени</dd>
+                  </dl>
+                </div>
+              </div>
+              <p class="example__outlay">
+                <span class="example__text-separator">Затраты на питание:</span>
+                <span class="example__text-separator"> 15 000 РУБ.</span>
+              </p>
             </div>
           </div>
-          <div class="example__toggle-wrapper">
-            <span class="example__condition">Было</span>
-            <div class="example__toggle-bar">
-              <button class="example__toggle"></button>
+          <div class="example__container">
+            <div class="example__image-wrapper">
+              <div class="example__image-wrapper-fat">
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/example/cat-fat.webp    1x,
+                      img/example/cat-fat@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/example/cat-fat.webp    1x,
+                      img/example/cat-fat@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    src="img/example/cat-fat.webp"
+                    srcset="img/example/cat-fat@2x.webp 2x"
+                  />
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/example/cat-fat.jpg    1x,
+                      img/example/cat-fat@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/example/cat-fat.jpg    1x,
+                      img/example/cat-fat@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="example__image example__image-fat"
+                    src="img/example/cat-fat.png"
+                    srcset="img/example/cat-fat@2x.png 2x"
+                    alt="толстый котик"
+                    width="310"
+                    height="240"
+                  />
+                </picture>
+              </div>
+              <div class="example__image-wrapper-skinny">
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/example/cat-skinny.webp    1x,
+                      img/example/cat-skinny@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/example/cat-skinny.webp    1x,
+                      img/example/cat-skinny@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    src="img/example/cat-skinny.webp"
+                    srcset="img/example/cat-skinny@2x.webp 2x"
+                  />
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/example/cat-skinny.jpg    1x,
+                      img/example/cat-skinny@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/example/cat-skinny.jpg    1x,
+                      img/example/cat-skinny@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="example__image example__image-skinny example__image--hidden"
+                    src="img/example/cat-skinny.png"
+                    srcset="img/example/cat-skinny@2x.png 2x"
+                    alt="худой котик"
+                    width="280"
+                    height="232"
+                  />
+                </picture>
+              </div>
             </div>
-            <span class="example__condition">Стало</span>
+            <div class="example__toggle-wrapper">
+              <span class="example__condition example__condition--was"
+                >Было</span
+              >
+              <div class="example__toggle-bar">
+                <button class="example__toggle"></button>
+              </div>
+              <span class="example__condition example__condition--became"
+                >Стало</span
+              >
+            </div>
           </div>
         </div>
       </section>
       <section class="our-contact our-contact--color">
-        <div class="our-contact__wrapper">
-          <h2 class="visually-hidden">Наш адрес</h2>
-          <p class="our-contact__text">
-            приглашаем<br />
-            к сотрудничеству дилеров!
-          </p>
-          <address class="our-contact__adress">
-            ул. Большая Конюшенная, д. 19/8
-            <span class="our-contact__adress-indent">Санкт-Петербург</span>
-          </address>
+        <div class="our-contact__container">
+          <div class="our-contact__wrapper">
+            <h2 class="visually-hidden">Наш адрес</h2>
+            <p class="our-contact__text">
+              приглашаем<br />
+              к сотрудничеству дилеров!
+            </p>
+            <address class="our-contact__adress">
+              ул. Большая Конюшенная, д. 19/8
+              <span class="our-contact__adress-indent">Санкт-Петербург</span>
+            </address>
+          </div>
         </div>
         <section class="map">
           <h2 class="visually-hidden">Наш магазин на карте</h2>
@@ -388,35 +361,25 @@
                 img/map/map-desctop.webp    1x,
                 img/map/map-desctop@2x.webp 2x
               "
-              width="1440"
-              height="400"
             />
             <source
               type="image/webp"
               media="(min-width: 768px)"
               srcset="img/map/map-tablet.webp 1x, img/map/map-tablet@2x.webp 2x"
-              width="768"
-              height="400"
             />
             <source
               type="image/webp"
               src="img/map/map-mobile.webp"
               srcset="img/map/map-mobile@2x.webp 2x"
               alt="зеленая упаковка с кошачей едой"
-              width="320"
-              height="362"
             />
             <source
               media="(min-width: 1440px)"
               srcset="img/map/map-desctop.jpg 1x, img/map/map-desctop@2x.jpg 2x"
-              width="1440"
-              height="400"
             />
             <source
               media="(min-width: 768px)"
               srcset="img/map/map-tablet.jpg 1x, img/map/map-tablet@2x.jpg 2x"
-              width="768"
-              height="400"
             />
             <img
               class="map__image"
