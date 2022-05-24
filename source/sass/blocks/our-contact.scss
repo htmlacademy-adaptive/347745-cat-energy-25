@@ -48,7 +48,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .our-contact {
+  .our-contact__container {
+    max-width: 1440px;
+    margin: 0 auto;
     position: relative;
   }
 

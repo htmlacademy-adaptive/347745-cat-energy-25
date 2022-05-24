@@ -1,3 +1,10 @@
+.product {
+  border-top: 1px solid #d9d9d9;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .product__title {
   margin: 0;
   min-width: 260px;
@@ -14,6 +21,7 @@
 @media (min-width: $tablet-width) {
   .product {
     padding: 0 30px;
+    border-top: none;
   }
 
   .product__title {
@@ -33,7 +41,7 @@
 
 @media (min-width: $desktop-width) {
   .product {
-    @include container($detsktop-container);
+    padding: 0 110px;
   }
 
   .product__title {

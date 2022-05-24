@@ -18,6 +18,9 @@
 
 .additional__wrapper {
   padding: 0 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .additional__list {
@@ -29,8 +32,6 @@
 
 .additional__item {
   border-bottom: 1px solid #cdcdcd;
-  // padding-top: 13px;
-  // padding-bottom: 20px;
 }
 
 .additional__link {
@@ -47,6 +48,7 @@
   margin-bottom: 12px;
   border-collapse: collapse;
   width: 100%;
+  color: #444444;
 }
 
 .additional__button {
@@ -128,17 +130,22 @@
 
 @media (min-width: $desktop-width) {
   .additional__title-wrapper {
-    padding-left: 80px;
+    padding: 0;
+    margin: 0 auto;
     margin-top: 64px;
     margin-bottom: 83px;
+    max-width: 1440px;
   }
 
   .additional__title {
     padding: 0 30px;
+    margin-left: 67px;
   }
 
   .additional__wrapper {
     padding: 0 110px;
+    margin: 0 auto;
+    max-width: 1440px;
     margin-bottom: 86px;
     display: flex;
   }

@@ -7,6 +7,8 @@
 .contacts__title-wrapper {
   @include decoreation-line;
   display: flex;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .contacts__title {
@@ -22,6 +24,7 @@
   box-sizing: border-box;
   margin: 34px auto 24px auto;
   padding: 0 20px;
+  max-width: 1440px;
 }
 
 .contacts__meaning {
