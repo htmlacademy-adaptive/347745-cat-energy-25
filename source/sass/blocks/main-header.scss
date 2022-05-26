@@ -35,7 +35,7 @@
   cursor: pointer;
 }
 
-.main-header--closed::before {
+.main-header__toggle--closed::before {
   content: "";
   position: absolute;
   top: 24px;

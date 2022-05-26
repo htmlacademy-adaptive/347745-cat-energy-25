@@ -89,6 +89,7 @@
   .additional__sub-title {
     @include fonts(20px, 20px);
     margin: 0;
+    max-width: 310px;
   }
 
   .additional__wrapper {
@@ -155,6 +156,7 @@
     justify-content: space-between;
     flex-direction: column;
     flex-grow: 1;
+    border-top: 1px solid #cdcdcd;
   }
 
   .additional__item {
@@ -162,6 +164,7 @@
     padding: 16px 0;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #cdcdcd;
   }
 
   .additional__link {

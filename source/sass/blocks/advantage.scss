@@ -26,22 +26,22 @@
   display: none;
 }
 
-.advantage--leaf-icon::before {
+.advantage__text--leaf-icon::before {
   @include background(25px, 28px);
   background-image: url("/img/leaf.svg");
 }
 
-.advantage--boil-icon::before {
+.advantage__text--boil-icon::before {
   @include background(29px, 31px);
   background-image: url("/img/boilin.svg");
 }
 
-.advantage--nutrition-icon::before {
+.advantage__text--nutrition-icon::before {
   @include background(25px, 30px);
   background-image: url("/img/eat.svg");
 }
 
-.advantage--scales-icon::before {
+.advantage__text--scales-icon::before {
   @include background(25px, 30px);
   background-image: url("/img/scales.svg");
 }

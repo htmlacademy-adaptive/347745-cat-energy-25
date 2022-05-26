@@ -19,7 +19,6 @@
       as="font"
       crossorigin="anonymous"
     />
-
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
@@ -57,15 +56,15 @@
               height="18"
             />
           </a>
-          <button class="main-header__toggle main-header--closed" type="button">
+          <button class="main-header__toggle main-header__toggle--closed" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
-        <nav class="main-header__nav main-nav main-nav--hidden main-nav--nojs">
+        <nav class="main-header__nav main-nav main-nav--nojs">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a
-                class="main-nav__link main-nav__link--color main-nav--current-index"
+                class="main-nav__link main-nav__link--color main-nav__link--current-index"
               >
                 Главная
               </a>
@@ -92,7 +91,7 @@
             Функциональное питание для котов
           </h1>
           <p class="program-selection__text">Занялся собой? Займись котом!</p>
-          <a class="program-selection__link" href="#"
+          <a class="program-selection__link" href="form.html"
             ><span class="program-selection__link-text"
               >подобрать программу</span
             ></a
@@ -113,8 +112,10 @@
             />
             <source
               type="image/webp"
-              src="img/index-can-mobile.webp"
-              srcset="img/index-can-mobile@2x.webp 2x"
+              srcset="
+                img/index-can-mobile.webp    1x,
+                img/index-can-mobile@2x.webp 2x
+              "
             />
             <source
               media="(min-width: 1440px)"
@@ -144,7 +145,7 @@
         <h2 class="visually-hidden">Программы</h2>
         <ul class="programs__list">
           <li class="programs__item">
-            <h3 class="programs__title programs--lost-weight-icon">
+            <h3 class="programs__title programs__title--lost-weight-icon">
               похудение
             </h3>
             <p class="programs__text">
@@ -155,7 +156,7 @@
             <a class="programs__link" href="#">каталог slim</a>
           </li>
           <li class="programs__item">
-            <h3 class="programs__title programs--weight-gain-icon">
+            <h3 class="programs__title programs__title--weight-gain-icon">
               Набор массы
             </h3>
             <p class="programs__text">
@@ -170,25 +171,25 @@
         <h2 class="advantage__title page-title">Как это работает</h2>
         <ul class="advantage__list">
           <li class="advantage__item">
-            <p class="advantage__text advantage--leaf-icon">
+            <p class="advantage__text advantage__text--leaf-icon">
               Функциональное питание содержит только полезные питательные
               вещества.
             </p>
           </li>
           <li class="advantage__item">
-            <p class="advantage__text advantage--boil-icon">
+            <p class="advantage__text advantage__text--boil-icon">
               Выпускается в виде порошка, который нужно лишь залить кипятком и
               готово.
             </p>
           </li>
           <li class="advantage__item">
-            <p class="advantage__text advantage--nutrition-icon">
+            <p class="advantage__text advantage__text--nutrition-icon">
               Замените один-два приема обычной еды на наше функциональное
               питание.
             </p>
           </li>
           <li class="advantage__item">
-            <p class="advantage__text advantage--scales-icon">
+            <p class="advantage__text advantage__text--scales-icon">
               Уже через месяц наслаждайтесь изменениями к лучшему<br />
               вашего питомца!
             </p>
@@ -248,8 +249,10 @@
                   />
                   <source
                     type="image/webp"
-                    src="img/example/cat-fat.webp"
-                    srcset="img/example/cat-fat@2x.webp 2x"
+                    srcset="
+                      img/example/cat-fat.webp    1x,
+                      img/example/cat-fat@2x.webp 2x
+                    "
                   />
                   <source
                     media="(min-width: 1440px)"
@@ -295,8 +298,10 @@
                   />
                   <source
                     type="image/webp"
-                    src="img/example/cat-skinny.webp"
-                    srcset="img/example/cat-skinny@2x.webp 2x"
+                    srcset="
+                      img/example/cat-skinny.webp    1x,
+                      img/example/cat-skinny@2x.webp 2x
+                    "
                   />
                   <source
                     media="(min-width: 1440px)"
@@ -328,7 +333,7 @@
                 >Было</span
               >
               <div class="example__toggle-bar">
-                <button class="example__toggle"></button>
+                <button class="example__toggle" aria-label="переключатель котивов"></button>
               </div>
               <span class="example__condition example__condition--became"
                 >Стало</span
@@ -369,9 +374,7 @@
             />
             <source
               type="image/webp"
-              src="img/map/map-mobile.webp"
-              srcset="img/map/map-mobile@2x.webp 2x"
-              alt="зеленая упаковка с кошачей едой"
+              srcset="img/map/map-mobile.webp 1x, img/map/map-mobile@2x.webp 2x"
             />
             <source
               media="(min-width: 1440px)"
@@ -450,7 +453,7 @@
             </a>
           </li>
         </ul>
-        <a class="main-footer__link main-footer__link--position" href="#">
+        <a class="main-footer__link main-footer__link--position" href="https://up.htmlacademy.ru/adaptive/25">
           <span class="main-footer__link-text">HTML Academy</span>
           <svg
             class="main-footer__icon"

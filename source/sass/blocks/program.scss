@@ -1,6 +1,6 @@
 .program {
   display: grid;
-  grid-template-columns: max-content;
+  grid-template-columns: 100%;
   gap: 25px;
   padding: 26px 20px 25px 20px;
   box-sizing: border-box;
@@ -83,6 +83,7 @@
 
   .program__meaning {
     padding-left: 64px;
+    max-width: 453px;
   }
 
   .program__control:checked + .program__control-mark::before {

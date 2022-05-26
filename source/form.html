@@ -57,11 +57,11 @@
               height="18"
             />
           </a>
-          <button class="main-header__toggle main-header--closed" type="button">
+          <button class="main-header__toggle main-header__toggle--closed" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
-        <nav class="main-header__nav main-nav main-nav--hidden main-nav--nojs">
+        <nav class="main-header__nav main-nav main-nav--nojs">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html"> Главная </a>
@@ -72,7 +72,7 @@
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav--current" href="#">
+              <a class="main-nav__link main-nav__link--current" href="#">
                 подбор программы
               </a>
             </li>
@@ -148,16 +148,16 @@
           </ul>
           <fieldset class="contacts">
             <div class="contacts__title-wrapper">
-              <legend class="contacts__title">
+              <h2 class="contacts__title">
                 Контактные данные<br class="contacts__title-indent" />
                 (владельца кота)
-              </legend>
+              </h2>
             </div>
             <div class="contacts__wrapper">
-              <label class="contacts__meaning">
+              <label class="contacts__meaning contacts__email">
                 E-mail:*
                 <input
-                  class="contacts__input contacts__email"
+                  class="contacts__input"
                   type="email"
                   placeholder="kuklachev@gmail.com"
                 />
@@ -174,19 +174,18 @@
           </fieldset>
           <fieldset class="comments">
             <div class="comments__title-wrapper">
-              <legend class="comments__title">Комментарий</legend>
+              <h2 class="comments__title">Комментарий</h2>
             </div>
             <div class="comments__wrapper">
               <textarea
                 class="comments__input"
-                type="text"
                 placeholder="Расскажите обо всех повАдках кота"
               ></textarea>
             </div>
           </fieldset>
           <fieldset class="extra">
             <div class="extra__title-wrapper">
-              <legend class="extra__title">Дополнительно</legend>
+              <h2 class="extra__title">Дополнительно</h2>
             </div>
             <div class="extra__wrapper">
               <label class="extra__meaning">
@@ -237,7 +236,6 @@
             </address>
           </div>
         </div>
-
         <section class="map">
           <h2 class="visually-hidden">Наш магазин на карте</h2>
           <picture>
@@ -256,9 +254,7 @@
             />
             <source
               type="image/webp"
-              src="img/map/map-mobile.webp"
-              srcset="img/map/map-mobile@2x.webp 2x"
-              alt="зеленая упаковка с кошачей едой"
+              srcset="img/map/map-mobile.webp 1x, img/map/map-mobile@2x.webp 2x"
             />
             <source
               media="(min-width: 1440px)"
@@ -335,7 +331,7 @@
             </a>
           </li>
         </ul>
-        <a class="main-footer__link main-footer__link--position" href="#">
+        <a class="main-footer__link main-footer__link--position" href="https://up.htmlacademy.ru/adaptive/25">
           <span class="main-footer__link-text">HTML Academy</span>
           <svg
             class="main-footer__icon"
