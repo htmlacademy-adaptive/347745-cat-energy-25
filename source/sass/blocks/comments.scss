@@ -13,6 +13,7 @@
 
 .comments__title {
   @include caption;
+  margin: 0;
   background: #ffffff;
   padding: 0 20px;
 }

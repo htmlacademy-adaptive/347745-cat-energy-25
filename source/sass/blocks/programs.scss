@@ -31,7 +31,7 @@
   padding-left: 70px;
 }
 
-.programs--lost-weight-icon {
+.programs__title--lost-weight-icon {
   &::before {
     content: "";
     background-image: url("/img/cat_back.svg");
@@ -47,7 +47,7 @@
   }
 }
 
-.programs--weight-gain-icon {
+.programs__title--weight-gain-icon {
   &::before {
     content: "";
     background-image: url("/img/cat_back2.svg");
@@ -155,7 +155,7 @@
     }
   }
 
-  .programs--lost-weight-icon {
+  .programs__title--lost-weight-icon {
     &::before {
       content: "";
       background-size: 200px 205px;
@@ -167,7 +167,7 @@
     }
   }
 
-  .programs--weight-gain-icon {
+  .programs__title--weight-gain-icon {
     &::before {
       content: "";
       background-size: 268px 200px;
@@ -207,7 +207,7 @@
     margin-top: 2px;
   }
 
-  .programs--lost-weight-icon {
+  .programs__title--lost-weight-icon {
     &::before {
       content: "";
       background-size: 100px 105px;
@@ -219,7 +219,7 @@
     }
   }
 
-  .programs--weight-gain-icon {
+  .programs__title--weight-gain-icon {
     &::before {
       content: "";
       background-size: 134px 100px;

@@ -56,8 +56,7 @@
 
 .extra__control-mark {
   position: absolute;
-  top: 59%;
-  transform: translateY(-50%);
+  top: -5px;
   left: 0;
   border: 1px solid #cdcdcd;
   width: 28px;
@@ -97,8 +96,8 @@
   .extra__wrapper {
     padding: 0 71px;
     display: grid;
-    grid-template-columns: repeat(2, max-content);
-    gap: 43px 123px;
+    grid-template-columns: repeat(2, auto);
+    gap: 43px 34px;
     margin: 60px auto;
   }
 

@@ -135,14 +135,13 @@
     width: 170px;
     height: auto;
     position: absolute;
-    bottom: 223px;
+    top: -93px;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
   }
 
   .product-card__img {
     object-fit: scale-down;
-    object-position: bottom;
     width: 100%;
     height: auto;
   }
@@ -234,10 +233,6 @@
 
   .product-card__title {
     margin-left: 0;
-  }
-
-  .product-card__img {
-    bottom: 227px;
   }
 
   .product-card__items {

@@ -7,6 +7,7 @@
   top: 66px;
   left: 0;
   right: 0;
+  z-index: 2;
   background: #ffffff;
 }
 
@@ -58,9 +59,9 @@
 
   .main-nav__list {
     position: static;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(50px, auto));
-    gap: 10px 36px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
     border: none;
     background: none;
   }
@@ -68,6 +69,7 @@
   .main-nav__item {
     padding: 0;
     border: none;
+    margin-right: 25px;
   }
 
   .main-nav__link {
@@ -75,11 +77,11 @@
     padding: 7px 0;
   }
 
-  .main-nav--current {
+  .main-nav__link--current {
     border-bottom: 2px solid #68b738;
   }
 
-  .main-nav--current-index {
+  .main-nav__link--current-index {
     border-bottom: 2px solid #68b738;
   }
 }
@@ -93,7 +95,7 @@
     @include fonts(20px, 30px);
   }
 
-  .main-nav--current-index {
+  .main-nav__link--current-index {
     border-bottom: 2px solid #ffffff;
   }
 }
